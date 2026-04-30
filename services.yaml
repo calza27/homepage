@@ -2,7 +2,41 @@
 # For configuration options and examples, please see:
 # https://gethomepage.dev/configs/services/
 
-- System:
+########################################################################################################################################################################################################
+- Network System:
+    - PiHole:
+        icon: pihole.png
+        href: http://pihole.volo.nas/admin
+        container: ix-pihole-pihole-1
+        server: local-docker
+        description: Network-wide ad blocker
+        widget:
+            type: pihole
+            url: http://pihole.volo.nas
+            version: 6
+########################################################################################################################################################################################################
+- Network:
+    - nGinx:
+        icon: nginx.png
+        href: http://nginx.volo.nas
+        container: ix-nginx-proxy-manager-npm-1
+        server: local-docker
+        description: Web server and reverse proxy
+        widget:
+            type: npm
+            url: http://nginx.volo.nas
+            username: calza27@gmail.com
+            password: {{HOMEPAGE_FILE_NGINX_KEY}}
+    - unifi:
+        icon: unifi.png
+        href: https://192.168.3.21
+        description: Network management controller
+        widget:
+            type: unifi
+            url: https://192.168.3.21
+            key: {{HOMEPAGE_FILE_UNIFI_KEY}}
+########################################################################################################################################################################################################
+- Media System:
     - truenas:
         icon: truenas.png
         href: http://volo.nas
@@ -79,7 +113,8 @@
             type: uptimekuma
             url: http://kuma.volo.nas
             slug: support-svcs
-- Media Stack:
+########################################################################################################################################################################################################
+- Now Playing:
     - Jellyfin:
         icon: jellyfin.png
         href: http://jellyfin.volo.nas
@@ -96,82 +131,96 @@
             showEpisodeNumber: true 
             expandOneStreamToTwoRows: false
             fields: ["movies", "series"]
-    - Sonarr:
-        icon: sonarr.png
-        href: http://sonarr.volo.nas
-        container: ix-sonarr-sonarr-1
-        server: local-docker
-        description: Automate downloading series
-        widget:
-            type: sonarr
-            url: http://sonarr.volo.nas
-            key: {{HOMEPAGE_FILE_SONARR_KEY}}
-            fields: ["wanted", "queued", "series"]
-    - Radarr:
-        icon: radarr.png
-        href: http://radarr.volo.nas
-        container: ix-radarr-radarr-1
-        server: local-docker
-        description: Automate downloading movies
-        widget:
-            type: radarr
-            url: http://radarr.volo.nas
-            key: {{HOMEPAGE_FILE_RADARR_KEY}}
-            fields: ["wanted", "queued", "movies"]
-    - Bookshelf:
-        icon: readarr.png
-        href: http://bookshelf.volo.nas
-        container: ix-bookshelf-bookshelf-1
-        server: local-docker
-        description: Automate downloading books
-        widget:
-            type: readarr
-            url: http://bookshelf.volo.nas
-            key: {{HOMEPAGE_FILE_BOOKSHELF_KEY}}
-            fields: ["wanted", "queued", "books"]
-    - Bazarr:
-        icon: bazarr.png
-        href: http://bazarr.volo.nas
-        container: ix-bazarr-bazarr-1
-        server: local-docker
-        description: Media subtitles management
-        widget:
-            type: bazarr
-            url: http://bazarr.volo.nas
-            key: {{HOMEPAGE_FILE_BAZARR_KEY}}
-            fields: ["missingEpisodes", "missingMovies"]
-    - Prowlarr:
-        icon: prowlarr.png
-        href: http://prowlarr.volo.nas
-        container: ix-prowlarr-prowlarr-1
-        server: local-docker
-        description: Indexer manager for Usenet and torrents
-        widget:
-            type: prowlarr
-            url: http://prowlarr.volo.nas
-            key: {{HOMEPAGE_FILE_PROWLARR_KEY}}
-            fields: ["numberOfGrabs", "numberOfQueries", "numberOfFailGrabs", "numberOfFailQueries"]
-
-- Release Calendar:
-    - LEGEND:⠀⠀🟢=Series ⠀⠀🔵=Movie:
-        href: https://jellyfin.volo.nas
-        widget:
-            type: calendar
-            firstDayInWeek: monday
-            view: monthly
-            maxEvents: 10
-            showTime: true
-            timezone: Australia/Melbourne
-            integrations:
-                - type: sonarr
-                  service_group: Media Stack
-                  service_name: Sonarr
-                  color: green
-                  params:
-                    unmonitored: false
-                - type: radarr
-                  service_group: Media Stack
-                  service_name: Radarr
-                  color: blue
-                  params:
-                    unmonitored: false
+########################################################################################################################################################################################################
+- Media Stack:
+    - Stack:
+        - Sonarr:
+            icon: sonarr.png
+            href: http://sonarr.volo.nas
+            container: ix-sonarr-sonarr-1
+            server: local-docker
+            description: Automate downloading series
+            widget:
+                type: sonarr
+                url: http://sonarr.volo.nas
+                key: {{HOMEPAGE_FILE_SONARR_KEY}}
+                fields: ["wanted", "queued", "series"]
+        - Radarr:
+            icon: radarr.png
+            href: http://radarr.volo.nas
+            container: ix-radarr-radarr-1
+            server: local-docker
+            description: Automate downloading movies
+            widget:
+                type: radarr
+                url: http://radarr.volo.nas
+                key: {{HOMEPAGE_FILE_RADARR_KEY}}
+                fields: ["wanted", "queued", "movies"]
+        - Bookshelf:
+            icon: readarr.png
+            href: http://bookshelf.volo.nas
+            container: ix-bookshelf-bookshelf-1
+            server: local-docker
+            description: Automate downloading books
+            widget:
+                type: readarr
+                url: http://bookshelf.volo.nas
+                key: {{HOMEPAGE_FILE_BOOKSHELF_KEY}}
+                fields: ["wanted", "queued", "books"]
+        - Bazarr:
+            icon: bazarr.png
+            href: http://bazarr.volo.nas
+            container: ix-bazarr-bazarr-1
+            server: local-docker
+            description: Media subtitles management
+            widget:
+                type: bazarr
+                url: http://bazarr.volo.nas
+                key: {{HOMEPAGE_FILE_BAZARR_KEY}}
+                fields: ["missingEpisodes", "missingMovies"]
+        - Prowlarr:
+            icon: prowlarr.png
+            href: http://prowlarr.volo.nas
+            container: ix-prowlarr-prowlarr-1
+            server: local-docker
+            description: Indexer manager for Usenet and torrents
+            widget:
+                type: prowlarr
+                url: http://prowlarr.volo.nas
+                key: {{HOMEPAGE_FILE_PROWLARR_KEY}}
+                fields: ["numberOfGrabs", "numberOfQueries", "numberOfFailGrabs", "numberOfFailQueries"]
+        - JellySeerr:
+            icon: seerr.png
+            href: http://seer.volo.nas
+            container: ix-jelly-seerr-seerr-1
+            server: local-docker
+            description: Request management for Jellyfin
+            widget:
+                type: seerr
+                url: http://seer.volo.nas
+                key: {{HOMEPAGE_FILE_SEER_KEY}}
+                fields: ["pending", "approved", "available", "completed", "processing", "issues"]
+    - Release Calendar:
+        - " ":
+            href: https://jellyfin.volo.nas
+            widget:
+                type: calendar
+                firstDayInWeek: monday
+                view: monthly
+                maxEvents: 20
+                showTime: true
+                timezone: Australia/Melbourne
+                integrations:
+                    - type: sonarr
+                      service_group: Stack
+                      service_name: Sonarr
+                      color: green
+                      params:
+                        unmonitored: false
+                    - type: radarr
+                      service_group: Stack
+                      service_name: Radarr
+                      color: blue
+                      params:
+                        unmonitored: false
+########################################################################################################################################################################################################

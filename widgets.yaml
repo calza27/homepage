@@ -7,6 +7,10 @@
     memory: true
     network: true
 
+- unifi_console:
+    url: https://192.168.3.21
+    key: {{HOMEPAGE_FILE_UNIFI_KEY}}
+
 - search:
     provider: duckduckgo
     target: _blank

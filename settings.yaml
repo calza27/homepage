@@ -14,3 +14,33 @@ disableCollapse: true
 providers:
   openweathermap: openweathermapapikey
   weatherapi: weatherapiapikey
+
+layout:
+  # Emporer.net Items
+  Network System:
+    tab: Emporer.net
+    style: row
+    columns: 4
+  Network:
+    tab: Emporer.net
+    style: row
+    columns: 2
+  # Volo.nas Items
+  Media System:
+    tab: Volo.nas
+    style: row
+    columns: 4
+  Now Playing:
+    tab: Volo.nas
+    style: row
+    columns: 1
+  Media Stack:
+    tab: Volo.nas
+    style: row
+    columns: 2
+    Stack:
+      style: row
+      columns: 2
+    Release Calendar:
+      style: row
+      columns: 1

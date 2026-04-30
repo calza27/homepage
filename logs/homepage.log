@@ -1,0 +1,641 @@
+[2026-04-29T07:08:23.786Z] info: kubernetes.yaml was copied to the config folder
+[2026-04-29T07:50:29.120Z] info: docker.yaml was copied to the config folder
+[2026-04-29T07:50:29.121Z] info: services.yaml was copied to the config folder
+[2026-04-29T07:50:29.122Z] info: bookmarks.yaml was copied to the config folder
+[2026-04-29T07:50:29.122Z] info: proxmox.yaml was copied to the config folder
+[2026-04-29T07:50:29.129Z] info: widgets.yaml was copied to the config folder
+[2026-04-29T07:50:29.130Z] info: custom.css was copied to the config folder
+[2026-04-29T07:50:29.130Z] info: custom.js was copied to the config folder
+[2026-04-29T20:34:39.166Z] warn: <resources> Drive not found for target: /mnt/storage
+[2026-04-29T20:34:42.090Z] warn: <resources> Drive not found for target: /mnt/storage
+[2026-04-29T20:34:45.118Z] warn: <resources> Drive not found for target: /mnt/storage
+[2026-04-29T20:34:48.203Z] warn: <resources> Drive not found for target: /mnt/storage
+[2026-04-29T20:34:51.248Z] warn: <resources> Drive not found for target: /mnt/storage
+[2026-04-29T20:34:54.320Z] warn: <resources> Drive not found for target: /mnt/storage
+[2026-04-29T20:34:57.364Z] warn: <resources> Drive not found for target: /mnt/storage
+[2026-04-29T22:16:57.604Z] error: Failed to load services.yaml, please check for errors
+[2026-04-29T22:16:57.604Z] error: Error: ENOENT: no such file or directory, open '/var/run/sonarr_key'
+[2026-04-29T22:16:57.606Z] error: Failed to load services.yaml, please check for errors
+[2026-04-29T22:16:57.607Z] error: Error: ENOENT: no such file or directory, open '/var/run/sonarr_key'
+[2026-04-29T22:16:57.803Z] error: Failed to load services.yaml, please check for errors
+[2026-04-29T22:16:57.803Z] error: Error: ENOENT: no such file or directory, open '/var/run/sonarr_key'
+[2026-04-29T22:45:18.953Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T22:45:18.957Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T22:45:21.215Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T22:45:21.216Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T22:45:21.666Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T22:45:21.668Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T22:45:22.293Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T22:45:22.294Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T22:45:28.397Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T22:45:28.397Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T22:45:29.388Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T22:45:29.388Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T22:45:31.138Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T22:45:31.138Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T22:45:32.316Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T22:45:32.316Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T22:45:33.131Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T22:45:33.132Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T22:48:52.283Z] error: <jellyfinProxyHandler> HTTP Error 401 calling http://jellyfin.volo.nas/emby/Items/Counts?api_key=[object%20Object]
+[2026-04-29T22:58:20.029Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-04-29T22:59:28.507Z] error: <servicesProxy> Error: Cache timeout must be a positive number
+    at Cache.put (/app/node_modules/.pnpm/memory-cache@0.2.0/node_modules/memory-cache/index.js:16:13)
+    at m (/app/.next/server/pages/api/services/proxy.js:79:17423)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async n (/app/.next/server/pages/api/services/proxy.js:79:18136)
+    at async l (/app/.next/server/pages/api/services/proxy.js:55:1239)
+    at async tN (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99046)
+    at async tI.render (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99761)
+    at async Module.n (/app/.next/server/pages/api/services/proxy.js:82:13408)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/server/next-server.js:747:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/server/next-server.js:392:37)
+[2026-04-29T22:59:30.395Z] error: <servicesProxy> Error: Cache timeout must be a positive number
+    at Cache.put (/app/node_modules/.pnpm/memory-cache@0.2.0/node_modules/memory-cache/index.js:16:13)
+    at m (/app/.next/server/pages/api/services/proxy.js:79:17423)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async n (/app/.next/server/pages/api/services/proxy.js:79:18136)
+    at async l (/app/.next/server/pages/api/services/proxy.js:55:1239)
+    at async tN (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99046)
+    at async tI.render (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99761)
+    at async Module.n (/app/.next/server/pages/api/services/proxy.js:82:13408)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/server/next-server.js:747:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/server/next-server.js:392:37)
+[2026-04-29T23:08:02.137Z] error: <servicesProxy> Error: Cache timeout must be a positive number
+    at Cache.put (/app/node_modules/.pnpm/memory-cache@0.2.0/node_modules/memory-cache/index.js:16:13)
+    at m (/app/.next/server/pages/api/services/proxy.js:79:17423)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async n (/app/.next/server/pages/api/services/proxy.js:79:18136)
+    at async l (/app/.next/server/pages/api/services/proxy.js:55:1239)
+    at async tN (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99046)
+    at async tI.render (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99761)
+    at async Module.n (/app/.next/server/pages/api/services/proxy.js:82:13408)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/server/next-server.js:747:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/server/next-server.js:392:37)
+[2026-04-29T23:08:23.849Z] error: <servicesProxy> Error: Cache timeout must be a positive number
+    at Cache.put (/app/node_modules/.pnpm/memory-cache@0.2.0/node_modules/memory-cache/index.js:16:13)
+    at m (/app/.next/server/pages/api/services/proxy.js:79:17423)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async n (/app/.next/server/pages/api/services/proxy.js:79:18136)
+    at async l (/app/.next/server/pages/api/services/proxy.js:55:1239)
+    at async tN (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99046)
+    at async tI.render (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99761)
+    at async Module.n (/app/.next/server/pages/api/services/proxy.js:82:13408)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/server/next-server.js:747:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/server/next-server.js:392:37)
+[2026-04-29T23:08:24.653Z] error: <servicesProxy> Error: Cache timeout must be a positive number
+    at Cache.put (/app/node_modules/.pnpm/memory-cache@0.2.0/node_modules/memory-cache/index.js:16:13)
+    at m (/app/.next/server/pages/api/services/proxy.js:79:17423)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async n (/app/.next/server/pages/api/services/proxy.js:79:18136)
+    at async l (/app/.next/server/pages/api/services/proxy.js:55:1239)
+    at async tN (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99046)
+    at async tI.render (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99761)
+    at async Module.n (/app/.next/server/pages/api/services/proxy.js:82:13408)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/server/next-server.js:747:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/server/next-server.js:392:37)
+[2026-04-29T23:08:42.481Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-04-29T23:08:43.680Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-04-29T23:08:51.851Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-04-29T23:08:53.631Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:08:53.632Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:08:55.322Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:08:55.323Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:08:56.293Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:08:56.294Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:09:00.690Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-04-29T23:09:01.391Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:09:01.391Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:09:01.515Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-04-29T23:09:03.511Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:09:03.512Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:09:05.209Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:09:05.210Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:09:05.621Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:09:05.622Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:09:06.422Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:09:06.423Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:09:07.342Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:09:07.343Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:09:08.846Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:09:08.847Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:09:09.086Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:09:09.087Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:09:10.730Z] error: <servicesProxy> Error: Cache timeout must be a positive number
+    at Cache.put (/app/node_modules/.pnpm/memory-cache@0.2.0/node_modules/memory-cache/index.js:16:13)
+    at m (/app/.next/server/pages/api/services/proxy.js:79:17423)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async n (/app/.next/server/pages/api/services/proxy.js:79:18136)
+    at async l (/app/.next/server/pages/api/services/proxy.js:55:1239)
+    at async tN (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99046)
+    at async tI.render (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99761)
+    at async Module.n (/app/.next/server/pages/api/services/proxy.js:82:13408)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/server/next-server.js:747:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/server/next-server.js:392:37)
+[2026-04-29T23:09:11.309Z] error: <servicesProxy> Error: Cache timeout must be a positive number
+    at Cache.put (/app/node_modules/.pnpm/memory-cache@0.2.0/node_modules/memory-cache/index.js:16:13)
+    at m (/app/.next/server/pages/api/services/proxy.js:79:17423)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async n (/app/.next/server/pages/api/services/proxy.js:79:18136)
+    at async l (/app/.next/server/pages/api/services/proxy.js:55:1239)
+    at async tN (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99046)
+    at async tI.render (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99761)
+    at async Module.n (/app/.next/server/pages/api/services/proxy.js:82:13408)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/server/next-server.js:747:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/server/next-server.js:392:37)
+[2026-04-29T23:12:45.770Z] error: <servicesProxy> Error: Cache timeout must be a positive number
+    at Cache.put (/app/node_modules/.pnpm/memory-cache@0.2.0/node_modules/memory-cache/index.js:16:13)
+    at m (/app/.next/server/pages/api/services/proxy.js:79:17423)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async n (/app/.next/server/pages/api/services/proxy.js:79:18136)
+    at async l (/app/.next/server/pages/api/services/proxy.js:55:1239)
+    at async tN (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99046)
+    at async tI.render (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99761)
+    at async Module.n (/app/.next/server/pages/api/services/proxy.js:82:13408)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/server/next-server.js:747:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/server/next-server.js:392:37)
+[2026-04-29T23:12:47.755Z] error: <servicesProxy> Error: Cache timeout must be a positive number
+    at Cache.put (/app/node_modules/.pnpm/memory-cache@0.2.0/node_modules/memory-cache/index.js:16:13)
+    at m (/app/.next/server/pages/api/services/proxy.js:79:17423)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async n (/app/.next/server/pages/api/services/proxy.js:79:18136)
+    at async l (/app/.next/server/pages/api/services/proxy.js:55:1239)
+    at async tN (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99046)
+    at async tI.render (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99761)
+    at async Module.n (/app/.next/server/pages/api/services/proxy.js:82:13408)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/server/next-server.js:747:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/server/next-server.js:392:37)
+[2026-04-29T23:13:45.948Z] error: <servicesProxy> Error: Cache timeout must be a positive number
+    at Cache.put (/app/node_modules/.pnpm/memory-cache@0.2.0/node_modules/memory-cache/index.js:16:13)
+    at m (/app/.next/server/pages/api/services/proxy.js:79:17423)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async n (/app/.next/server/pages/api/services/proxy.js:79:18136)
+    at async l (/app/.next/server/pages/api/services/proxy.js:55:1239)
+    at async tN (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99046)
+    at async tI.render (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99761)
+    at async Module.n (/app/.next/server/pages/api/services/proxy.js:82:13408)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/server/next-server.js:747:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/server/next-server.js:392:37)
+[2026-04-29T23:13:54.279Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-04-29T23:13:55.252Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-04-29T23:14:05.337Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-04-29T23:14:05.917Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-04-29T23:14:10.316Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-04-29T23:14:13.152Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:14:13.153Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:14:13.340Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:14:13.341Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:14:14.749Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:14:14.750Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:14:19.636Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:14:19.637Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:14:41.938Z] error: <piholeProxyHandler> Failed to login to Pi-Hole API, status: 400
+[2026-04-29T23:14:44.982Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:14:44.983Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:14:46.320Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:14:46.321Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:14:48.654Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:14:48.654Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:14:50.474Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:14:50.475Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:15:26.349Z] error: <servicesProxy> Error: Cache timeout must be a positive number
+    at Cache.put (/app/node_modules/.pnpm/memory-cache@0.2.0/node_modules/memory-cache/index.js:16:13)
+    at m (/app/.next/server/pages/api/services/proxy.js:79:17423)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async n (/app/.next/server/pages/api/services/proxy.js:79:18136)
+    at async l (/app/.next/server/pages/api/services/proxy.js:55:1239)
+    at async tN (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99046)
+    at async tI.render (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99761)
+    at async Module.n (/app/.next/server/pages/api/services/proxy.js:82:13408)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/server/next-server.js:747:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/server/next-server.js:392:37)
+[2026-04-29T23:15:27.486Z] error: <servicesProxy> Error: Cache timeout must be a positive number
+    at Cache.put (/app/node_modules/.pnpm/memory-cache@0.2.0/node_modules/memory-cache/index.js:16:13)
+    at m (/app/.next/server/pages/api/services/proxy.js:79:17423)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async n (/app/.next/server/pages/api/services/proxy.js:79:18136)
+    at async l (/app/.next/server/pages/api/services/proxy.js:55:1239)
+    at async tN (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99046)
+    at async tI.render (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99761)
+    at async Module.n (/app/.next/server/pages/api/services/proxy.js:82:13408)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/server/next-server.js:747:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/server/next-server.js:392:37)
+[2026-04-29T23:15:56.504Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:15:56.505Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:15:59.150Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:15:59.150Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:15:59.360Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:15:59.361Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:16:01.736Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:16:01.737Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:16:02.069Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:16:02.070Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:16:02.538Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:16:02.539Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:16:04.097Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:16:04.098Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:16:04.706Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:16:04.707Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:17:57.882Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:17:57.883Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:17:58.435Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:17:58.436Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:17:58.735Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:17:58.736Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:18:00.141Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:18:00.142Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:18:07.714Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:18:07.715Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:18:08.764Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:18:08.765Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:18:09.159Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:18:09.160Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:18:09.458Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:18:09.458Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:18:11.690Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:18:11.691Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:18:12.806Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:18:12.807Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:18:12.846Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:18:12.846Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:18:16.712Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:18:16.713Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:18:40.661Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:18:40.661Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:18:41.948Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:18:41.948Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:18:42.369Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-29T23:18:42.369Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-29T23:25:51.298Z] error: <servicesProxy> TypeError: b[c].forEach is not a function
+    at /app/.next/server/chunks/6380.js:1:7840
+    at Array.map (<anonymous>)
+    at a (/app/.next/server/chunks/6380.js:1:7786)
+    at s (/app/.next/server/chunks/6380.js:1:8143)
+    at async w (/app/.next/server/chunks/6380.js:1:10296)
+    at async x (/app/.next/server/chunks/6380.js:1:10575)
+    at async l (/app/.next/server/pages/api/services/proxy.js:55:905)
+    at async tN (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99046)
+    at async tI.render (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99761)
+    at async Module.n (/app/.next/server/pages/api/services/proxy.js:82:13408)
+[2026-04-29T23:25:51.300Z] error: <servicesProxy> TypeError: b[c].forEach is not a function
+    at /app/.next/server/chunks/6380.js:1:7840
+    at Array.map (<anonymous>)
+    at a (/app/.next/server/chunks/6380.js:1:7786)
+    at s (/app/.next/server/chunks/6380.js:1:8143)
+    at async w (/app/.next/server/chunks/6380.js:1:10296)
+    at async x (/app/.next/server/chunks/6380.js:1:10575)
+    at async l (/app/.next/server/pages/api/services/proxy.js:55:905)
+    at async tN (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99046)
+    at async tI.render (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99761)
+    at async Module.n (/app/.next/server/pages/api/services/proxy.js:82:13408)
+[2026-04-29T23:25:51.304Z] error: <servicesProxy> TypeError: b[c].forEach is not a function
+    at /app/.next/server/chunks/6380.js:1:7840
+    at Array.map (<anonymous>)
+    at a (/app/.next/server/chunks/6380.js:1:7786)
+    at s (/app/.next/server/chunks/6380.js:1:8143)
+    at async w (/app/.next/server/chunks/6380.js:1:10296)
+    at async x (/app/.next/server/chunks/6380.js:1:10575)
+    at async l (/app/.next/server/pages/api/services/proxy.js:55:905)
+    at async tN (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99046)
+    at async tI.render (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99761)
+    at async Module.n (/app/.next/server/pages/api/services/proxy.js:82:13408)
+[2026-04-29T23:25:51.307Z] error: <servicesProxy> TypeError: b[c].forEach is not a function
+    at /app/.next/server/chunks/6380.js:1:7840
+    at Array.map (<anonymous>)
+    at a (/app/.next/server/chunks/6380.js:1:7786)
+    at s (/app/.next/server/chunks/6380.js:1:8143)
+    at async w (/app/.next/server/chunks/6380.js:1:10296)
+    at async x (/app/.next/server/chunks/6380.js:1:10575)
+    at async l (/app/.next/server/pages/api/services/proxy.js:55:905)
+    at async tN (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99046)
+    at async tI.render (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99761)
+    at async Module.n (/app/.next/server/pages/api/services/proxy.js:82:13408)
+[2026-04-29T23:25:51.315Z] error: <servicesProxy> TypeError: b[c].forEach is not a function
+    at /app/.next/server/chunks/6380.js:1:7840
+    at Array.map (<anonymous>)
+    at a (/app/.next/server/chunks/6380.js:1:7786)
+    at s (/app/.next/server/chunks/6380.js:1:8143)
+    at async w (/app/.next/server/chunks/6380.js:1:10296)
+    at async x (/app/.next/server/chunks/6380.js:1:10575)
+    at async l (/app/.next/server/pages/api/services/proxy.js:55:905)
+    at async tN (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99046)
+    at async tI.render (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99761)
+    at async Module.n (/app/.next/server/pages/api/services/proxy.js:82:13408)
+[2026-04-29T23:25:51.321Z] error: <servicesProxy> TypeError: b[c].forEach is not a function
+    at /app/.next/server/chunks/6380.js:1:7840
+    at Array.map (<anonymous>)
+    at a (/app/.next/server/chunks/6380.js:1:7786)
+    at s (/app/.next/server/chunks/6380.js:1:8143)
+    at async w (/app/.next/server/chunks/6380.js:1:10296)
+    at async x (/app/.next/server/chunks/6380.js:1:10575)
+    at async l (/app/.next/server/pages/api/services/proxy.js:55:905)
+    at async tN (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99046)
+    at async tI.render (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99761)
+    at async Module.n (/app/.next/server/pages/api/services/proxy.js:82:13408)
+[2026-04-29T23:25:51.328Z] error: <servicesProxy> TypeError: b[c].forEach is not a function
+    at /app/.next/server/chunks/6380.js:1:7840
+    at Array.map (<anonymous>)
+    at a (/app/.next/server/chunks/6380.js:1:7786)
+    at s (/app/.next/server/chunks/6380.js:1:8143)
+    at async w (/app/.next/server/chunks/6380.js:1:10296)
+    at async x (/app/.next/server/chunks/6380.js:1:10575)
+    at async l (/app/.next/server/pages/api/services/proxy.js:55:905)
+    at async tN (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99046)
+    at async tI.render (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99761)
+    at async Module.n (/app/.next/server/pages/api/services/proxy.js:82:13408)
+[2026-04-29T23:25:51.329Z] error: <servicesProxy> TypeError: b[c].forEach is not a function
+    at /app/.next/server/chunks/6380.js:1:7840
+    at Array.map (<anonymous>)
+    at a (/app/.next/server/chunks/6380.js:1:7786)
+    at s (/app/.next/server/chunks/6380.js:1:8143)
+    at async w (/app/.next/server/chunks/6380.js:1:10296)
+    at async x (/app/.next/server/chunks/6380.js:1:10575)
+    at async l (/app/.next/server/pages/api/services/proxy.js:55:905)
+    at async tN (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99046)
+    at async tI.render (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99761)
+    at async Module.n (/app/.next/server/pages/api/services/proxy.js:82:13408)
+[2026-04-29T23:25:51.333Z] error: <servicesProxy> TypeError: b[c].forEach is not a function
+    at /app/.next/server/chunks/6380.js:1:7840
+    at Array.map (<anonymous>)
+    at a (/app/.next/server/chunks/6380.js:1:7786)
+    at s (/app/.next/server/chunks/6380.js:1:8143)
+    at async w (/app/.next/server/chunks/6380.js:1:10296)
+    at async x (/app/.next/server/chunks/6380.js:1:10575)
+    at async l (/app/.next/server/pages/api/services/proxy.js:55:905)
+    at async tN (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99046)
+    at async tI.render (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99761)
+    at async Module.n (/app/.next/server/pages/api/services/proxy.js:82:13408)
+[2026-04-29T23:25:51.334Z] error: <servicesProxy> TypeError: b[c].forEach is not a function
+    at /app/.next/server/chunks/6380.js:1:7840
+    at Array.map (<anonymous>)
+    at a (/app/.next/server/chunks/6380.js:1:7786)
+    at s (/app/.next/server/chunks/6380.js:1:8143)
+    at async w (/app/.next/server/chunks/6380.js:1:10296)
+    at async x (/app/.next/server/chunks/6380.js:1:10575)
+    at async l (/app/.next/server/pages/api/services/proxy.js:55:905)
+    at async tN (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99046)
+    at async tI.render (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99761)
+    at async Module.n (/app/.next/server/pages/api/services/proxy.js:82:13408)
+[2026-04-29T23:25:51.336Z] error: <servicesProxy> TypeError: b[c].forEach is not a function
+    at /app/.next/server/chunks/6380.js:1:7840
+    at Array.map (<anonymous>)
+    at a (/app/.next/server/chunks/6380.js:1:7786)
+    at s (/app/.next/server/chunks/6380.js:1:8143)
+    at async w (/app/.next/server/chunks/6380.js:1:10296)
+    at async x (/app/.next/server/chunks/6380.js:1:10575)
+    at async l (/app/.next/server/pages/api/services/proxy.js:55:905)
+    at async tN (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99046)
+    at async tI.render (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99761)
+    at async Module.n (/app/.next/server/pages/api/services/proxy.js:82:13408)
+[2026-04-29T23:25:51.340Z] error: <servicesProxy> TypeError: b[c].forEach is not a function
+    at /app/.next/server/chunks/6380.js:1:7840
+    at Array.map (<anonymous>)
+    at a (/app/.next/server/chunks/6380.js:1:7786)
+    at s (/app/.next/server/chunks/6380.js:1:8143)
+    at async w (/app/.next/server/chunks/6380.js:1:10296)
+    at async x (/app/.next/server/chunks/6380.js:1:10575)
+    at async l (/app/.next/server/pages/api/services/proxy.js:55:905)
+    at async tN (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99046)
+    at async tI.render (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99761)
+    at async Module.n (/app/.next/server/pages/api/services/proxy.js:82:13408)
+[2026-04-29T23:25:51.349Z] error: <servicesProxy> TypeError: b[c].forEach is not a function
+    at /app/.next/server/chunks/6380.js:1:7840
+    at Array.map (<anonymous>)
+    at a (/app/.next/server/chunks/6380.js:1:7786)
+    at s (/app/.next/server/chunks/6380.js:1:8143)
+    at async w (/app/.next/server/chunks/6380.js:1:10296)
+    at async x (/app/.next/server/chunks/6380.js:1:10575)
+    at async l (/app/.next/server/pages/api/services/proxy.js:55:905)
+    at async tN (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99046)
+    at async tI.render (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99761)
+    at async Module.n (/app/.next/server/pages/api/services/proxy.js:82:13408)
+[2026-04-29T23:25:51.351Z] error: <servicesProxy> TypeError: b[c].forEach is not a function
+    at /app/.next/server/chunks/6380.js:1:7840
+    at Array.map (<anonymous>)
+    at a (/app/.next/server/chunks/6380.js:1:7786)
+    at s (/app/.next/server/chunks/6380.js:1:8143)
+    at async w (/app/.next/server/chunks/6380.js:1:10296)
+    at async x (/app/.next/server/chunks/6380.js:1:10575)
+    at async l (/app/.next/server/pages/api/services/proxy.js:55:905)
+    at async tN (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99046)
+    at async tI.render (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99761)
+    at async Module.n (/app/.next/server/pages/api/services/proxy.js:82:13408)
+[2026-04-29T23:25:51.354Z] error: <servicesProxy> TypeError: b[c].forEach is not a function
+    at /app/.next/server/chunks/6380.js:1:7840
+    at Array.map (<anonymous>)
+    at a (/app/.next/server/chunks/6380.js:1:7786)
+    at s (/app/.next/server/chunks/6380.js:1:8143)
+    at async w (/app/.next/server/chunks/6380.js:1:10296)
+    at async x (/app/.next/server/chunks/6380.js:1:10575)
+    at async l (/app/.next/server/pages/api/services/proxy.js:55:905)
+    at async tN (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99046)
+    at async tI.render (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99761)
+    at async Module.n (/app/.next/server/pages/api/services/proxy.js:82:13408)
+[2026-04-29T23:25:51.355Z] error: <servicesProxy> TypeError: b[c].forEach is not a function
+    at /app/.next/server/chunks/6380.js:1:7840
+    at Array.map (<anonymous>)
+    at a (/app/.next/server/chunks/6380.js:1:7786)
+    at s (/app/.next/server/chunks/6380.js:1:8143)
+    at async w (/app/.next/server/chunks/6380.js:1:10296)
+    at async x (/app/.next/server/chunks/6380.js:1:10575)
+    at async l (/app/.next/server/pages/api/services/proxy.js:55:905)
+    at async tN (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99046)
+    at async tI.render (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99761)
+    at async Module.n (/app/.next/server/pages/api/services/proxy.js:82:13408)
+[2026-04-29T23:25:51.356Z] error: <servicesProxy> TypeError: b[c].forEach is not a function
+    at /app/.next/server/chunks/6380.js:1:7840
+    at Array.map (<anonymous>)
+    at a (/app/.next/server/chunks/6380.js:1:7786)
+    at s (/app/.next/server/chunks/6380.js:1:8143)
+    at async w (/app/.next/server/chunks/6380.js:1:10296)
+    at async x (/app/.next/server/chunks/6380.js:1:10575)
+    at async l (/app/.next/server/pages/api/services/proxy.js:55:905)
+    at async tN (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99046)
+    at async tI.render (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99761)
+    at async Module.n (/app/.next/server/pages/api/services/proxy.js:82:13408)
+[2026-04-29T23:25:51.364Z] error: <servicesProxy> TypeError: b[c].forEach is not a function
+    at /app/.next/server/chunks/6380.js:1:7840
+    at Array.map (<anonymous>)
+    at a (/app/.next/server/chunks/6380.js:1:7786)
+    at s (/app/.next/server/chunks/6380.js:1:8143)
+    at async w (/app/.next/server/chunks/6380.js:1:10296)
+    at async x (/app/.next/server/chunks/6380.js:1:10575)
+    at async l (/app/.next/server/pages/api/services/proxy.js:55:905)
+    at async tN (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99046)
+    at async tI.render (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99761)
+    at async Module.n (/app/.next/server/pages/api/services/proxy.js:82:13408)
+[2026-04-29T23:25:51.371Z] error: <servicesProxy> TypeError: b[c].forEach is not a function
+    at /app/.next/server/chunks/6380.js:1:7840
+    at Array.map (<anonymous>)
+    at a (/app/.next/server/chunks/6380.js:1:7786)
+    at s (/app/.next/server/chunks/6380.js:1:8143)
+    at async w (/app/.next/server/chunks/6380.js:1:10296)
+    at async x (/app/.next/server/chunks/6380.js:1:10575)
+    at async l (/app/.next/server/pages/api/services/proxy.js:55:905)
+    at async tN (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99046)
+    at async tI.render (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99761)
+    at async Module.n (/app/.next/server/pages/api/services/proxy.js:82:13408)
+[2026-04-29T23:25:51.380Z] error: <servicesProxy> TypeError: b[c].forEach is not a function
+    at /app/.next/server/chunks/6380.js:1:7840
+    at Array.map (<anonymous>)
+    at a (/app/.next/server/chunks/6380.js:1:7786)
+    at s (/app/.next/server/chunks/6380.js:1:8143)
+    at async w (/app/.next/server/chunks/6380.js:1:10296)
+    at async x (/app/.next/server/chunks/6380.js:1:10575)
+    at async l (/app/.next/server/pages/api/services/proxy.js:55:905)
+    at async tN (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99046)
+    at async tI.render (/app/node_modules/.pnpm/next@16.1.7_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:99761)
+    at async Module.n (/app/.next/server/pages/api/services/proxy.js:82:13408)
+[2026-04-29T23:25:51.382Z] error: Failed to load services.yaml, please check for errors
+[2026-04-29T23:25:51.382Z] error: TypeError: b[c].forEach is not a function
+[2026-04-29T23:25:51.418Z] error: Failed to load services.yaml, please check for errors
+[2026-04-29T23:25:51.418Z] error: TypeError: b[c].forEach is not a function
+[2026-04-29T23:25:51.584Z] error: Failed to load services.yaml, please check for errors
+[2026-04-29T23:25:51.584Z] error: TypeError: b[c].forEach is not a function
+[2026-04-29T23:25:59.579Z] error: Failed to load services.yaml, please check for errors
+[2026-04-29T23:25:59.579Z] error: TypeError: b[c].forEach is not a function
+[2026-04-29T23:25:59.582Z] error: Failed to load services.yaml, please check for errors
+[2026-04-29T23:25:59.582Z] error: TypeError: b[c].forEach is not a function
+[2026-04-29T23:25:59.707Z] error: Failed to load services.yaml, please check for errors
+[2026-04-29T23:25:59.708Z] error: TypeError: b[c].forEach is not a function
+[2026-04-30T02:00:11.077Z] error: <jellyfinProxyHandler> HTTP Error 401 calling http://jellyfin.volo.nas/emby/Sessions?api_key=[object%20Object]
+[2026-04-30T02:00:11.092Z] error: <jellyfinProxyHandler> HTTP Error 401 calling http://jellyfin.volo.nas/emby/Items/Counts?api_key=[object%20Object]
+[2026-04-30T02:00:11.114Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Invalid params
+[2026-04-30T02:00:11.115Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-30T02:00:11.125Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Invalid params
+[2026-04-30T02:00:11.126Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-30T02:00:11.130Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Invalid params
+[2026-04-30T02:00:11.131Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-30T02:00:11.131Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Invalid params
+[2026-04-30T02:00:11.132Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-30T02:00:11.829Z] error: <jellyfinProxyHandler> HTTP Error 401 calling http://jellyfin.volo.nas/emby/Sessions?api_key=[object%20Object]
+[2026-04-30T02:00:11.846Z] error: <jellyfinProxyHandler> HTTP Error 401 calling http://jellyfin.volo.nas/emby/Items/Counts?api_key=[object%20Object]
+[2026-04-30T02:00:11.865Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Invalid params
+[2026-04-30T02:00:11.865Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-30T02:00:11.887Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Invalid params
+[2026-04-30T02:00:11.888Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-30T02:00:11.892Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Invalid params
+[2026-04-30T02:00:11.892Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-30T02:00:11.896Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Invalid params
+[2026-04-30T02:00:11.896Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-30T02:05:13.311Z] warn: Failed to update prerender cache for /en Error: EACCES: permission denied, open '/app/.next/server/pages/en.html'
+    at ignore-listed frames {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'open',
+  path: '/app/.next/server/pages/en.html'
+}
+[2026-04-30T02:07:08.454Z] warn: Failed to update prerender cache for /en Error: EACCES: permission denied, open '/app/.next/server/pages/en.html'
+    at ignore-listed frames {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'open',
+  path: '/app/.next/server/pages/en.html'
+}
+[2026-04-30T02:08:02.593Z] warn: Failed to update prerender cache for /en Error: EACCES: permission denied, open '/app/.next/server/pages/en.html'
+    at ignore-listed frames {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'open',
+  path: '/app/.next/server/pages/en.html'
+}
+[2026-04-30T02:08:19.810Z] warn: Failed to update prerender cache for /en Error: EACCES: permission denied, open '/app/.next/server/pages/en.html'
+    at ignore-listed frames {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'open',
+  path: '/app/.next/server/pages/en.html'
+}
+[2026-04-30T02:08:49.446Z] warn: Failed to update prerender cache for /en Error: EACCES: permission denied, open '/app/.next/server/pages/en.html'
+    at ignore-listed frames {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'open',
+  path: '/app/.next/server/pages/en.html'
+}
+[2026-04-30T03:06:07.506Z] warn: Failed to update prerender cache for /en Error: EACCES: permission denied, open '/app/.next/server/pages/en.html'
+    at ignore-listed frames {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'open',
+  path: '/app/.next/server/pages/en.html'
+}
+[2026-04-30T03:06:20.339Z] warn: Failed to update prerender cache for /en Error: EACCES: permission denied, open '/app/.next/server/pages/en.html'
+    at ignore-listed frames {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'open',
+  path: '/app/.next/server/pages/en.html'
+}
+[2026-04-30T03:06:39.405Z] warn: Failed to update prerender cache for /en Error: EACCES: permission denied, open '/app/.next/server/pages/en.html'
+    at ignore-listed frames {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'open',
+  path: '/app/.next/server/pages/en.html'
+}
+[2026-04-30T03:06:41.334Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-30T03:06:41.335Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-30T03:06:42.562Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-30T03:06:42.563Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-30T03:06:43.255Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-30T03:06:43.256Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-30T03:06:46.190Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-30T03:06:46.191Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-30T03:06:49.400Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-30T03:06:49.401Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-30T03:06:50.306Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-30T03:06:50.306Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-30T03:06:55.833Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-30T03:06:55.833Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-30T03:07:19.973Z] warn: Failed to update prerender cache for /en Error: EACCES: permission denied, open '/app/.next/server/pages/en.html'
+    at ignore-listed frames {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'open',
+  path: '/app/.next/server/pages/en.html'
+}
+[2026-04-30T03:07:42.382Z] warn: Failed to update prerender cache for /en Error: EACCES: permission denied, open '/app/.next/server/pages/en.html'
+    at ignore-listed frames {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'open',
+  path: '/app/.next/server/pages/en.html'
+}
+[2026-04-30T03:07:58.764Z] warn: Failed to update prerender cache for /en Error: EACCES: permission denied, open '/app/.next/server/pages/en.html'
+    at ignore-listed frames {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'open',
+  path: '/app/.next/server/pages/en.html'
+}
+[2026-04-30T03:08:00.553Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-30T03:08:00.554Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-30T03:08:01.135Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-30T03:08:01.136Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-30T03:08:03.437Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-30T03:08:03.438Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-30T03:08:04.472Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-30T03:08:04.473Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-30T03:08:19.886Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-30T03:08:19.887Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-30T03:08:23.155Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-30T03:08:23.156Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-30T03:08:25.033Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: Method call error
+[2026-04-30T03:08:25.033Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-30T03:08:27.884Z] error: <truenasProxyHandler> TrueNAS API key authentication failed: TrueNAS websocket wait timed out
+[2026-04-30T03:08:27.886Z] error: <truenasProxyHandler> Websocket call for TrueNAS failed: TrueNAS authentication failed
+[2026-04-30T03:10:31.627Z] warn: Failed to update prerender cache for /en Error: EACCES: permission denied, open '/app/.next/server/pages/en.html'
+    at ignore-listed frames {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'open',
+  path: '/app/.next/server/pages/en.html'
+}
+[2026-04-30T03:13:11.485Z] warn: Failed to update prerender cache for /en Error: EACCES: permission denied, open '/app/.next/server/pages/en.html'
+    at ignore-listed frames {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'open',
+  path: '/app/.next/server/pages/en.html'
+}

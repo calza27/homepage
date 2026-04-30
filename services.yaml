@@ -6,7 +6,6 @@
     - truenas:
         icon: truenas.png
         href: http://volo.nas
-        container: truenas
         description: The OS
         widget:
             type: truenas
@@ -19,7 +18,7 @@
         icon: speedtest-tracker.png
         href: http://speed.volo.nas
         server: local-docker
-        container: speedtest-tracker
+        container: ix-speedtest-tracker-speedtest-tracker-1
         description: Network speed tracker
         widget:
             type: speedtest
@@ -29,7 +28,7 @@
     - PiHole:
         icon: pihole.png
         href: http://pihole.volo.nas/admin
-        container: pihole
+        container: ix-pihole-pihole-1
         server: local-docker
         description: Network-wide ad blocker
         widget:
@@ -39,7 +38,7 @@
     - nGinx:
         icon: nginx.png
         href: http://nginx.volo.nas
-        container: nginx
+        container: ix-nginx-proxy-manager-npm-1
         server: local-docker
         description: Web server and reverse proxy
         widget:
@@ -63,7 +62,7 @@
     - Media Uptime:
         icon: uptime-kuma.png
         href: http://kuma.volo.nas
-        container: uptime-kuma
+        container: ix-uptime-kuma-uptime-kuma-1
         server: local-docker
         description: Monitor the status of your services
         widget:
@@ -73,7 +72,7 @@
     - Support Uptime:
         icon: uptime-kuma.png
         href: http://kuma.volo.nas
-        container: uptime-kuma
+        container: ix-uptime-kuma-uptime-kuma-1
         server: local-docker
         description: Monitor the status of your services
         widget:
@@ -84,7 +83,7 @@
     - Jellyfin:
         icon: jellyfin.png
         href: http://jellyfin.volo.nas
-        container: jellyfin
+        container: ix-jellyfin-jellyfin-1
         server: local-docker
         description: Multimedia streaming library
         widget:
@@ -100,7 +99,7 @@
     - Sonarr:
         icon: sonarr.png
         href: http://sonarr.volo.nas
-        container: sonarr
+        container: ix-sonarr-sonarr-1
         server: local-docker
         description: Automate downloading series
         widget:
@@ -111,7 +110,7 @@
     - Radarr:
         icon: radarr.png
         href: http://radarr.volo.nas
-        container: radarr
+        container: ix-radarr-radarr-1
         server: local-docker
         description: Automate downloading movies
         widget:
@@ -119,10 +118,10 @@
             url: http://radarr.volo.nas
             key: {{HOMEPAGE_FILE_RADARR_KEY}}
             fields: ["wanted", "queued", "movies"]
-    - Readarr:
+    - Bookshelf:
         icon: readarr.png
         href: http://bookshelf.volo.nas
-        container: bookshelf
+        container: ix-bookshelf-bookshelf-1
         server: local-docker
         description: Automate downloading books
         widget:
@@ -133,7 +132,7 @@
     - Bazarr:
         icon: bazarr.png
         href: http://bazarr.volo.nas
-        container: bazarr
+        container: ix-bazarr-bazarr-1
         server: local-docker
         description: Media subtitles management
         widget:
@@ -144,7 +143,7 @@
     - Prowlarr:
         icon: prowlarr.png
         href: http://prowlarr.volo.nas
-        container: prowlarr
+        container: ix-prowlarr-prowlarr-1
         server: local-docker
         description: Indexer manager for Usenet and torrents
         widget:

@@ -60,6 +60,40 @@
             url: http://speed.volo.nas
             bitratePrecision: 0
             fields: ["download", "upload", "ping"]
+            highlight:
+                download:
+                    numeric:
+                        - level: danger
+                          when: lte
+                          value: 250
+                        - level: warn
+                          when: lte
+                          value: 450
+                        - level: good
+                          when: gte
+                          value: 450
+                upload:
+                    numeric:
+                        - level: danger
+                          when: lte
+                          value: 25
+                        - level: warn
+                          when: lte
+                          value: 45
+                        - level: good
+                          when: gte
+                          value: 45
+                ping:
+                    numeric:
+                        - level: danger
+                          when: gte
+                          value: 50
+                        - level: warn
+                          when: gte
+                          value: 20
+                        - level: good
+                          when: lt
+                          value: 20
 ########################################################################################################################################################################################################
 - Network:
     - nGinx:
@@ -81,6 +115,32 @@
             type: unifi
             url: https://192.168.3.21
             key: {{HOMEPAGE_FILE_UNIFI_KEY}}
+            highlight:
+                wlan:
+                    string:
+                        - level: danger
+                          when: equals
+                          negate: true
+                          value: "UP"
+                        - level: good
+                          when: equals
+                          value: "UP"
+                wlan_devices:
+                    numeric:
+                        - level: danger
+                          when: equals
+                          value: 0
+                        - level: good
+                          when: gt
+                          value: 0
+                wlan_users:
+                    numeric:
+                        - level: warn
+                          when: equals
+                          value: 0
+                        - level: good
+                          when: gt
+                          value: 0
 ########################################################################################################################################################################################################
 - Media System:
     - truenas:

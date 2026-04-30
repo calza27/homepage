@@ -10,10 +10,56 @@
         container: ix-pihole-pihole-1
         server: local-docker
         description: Network-wide ad blocker
+        widgets:
+            # - type: pihole
+            #   url: http://pihole.emporer.net
+            #   version: 6
+            #   highlight:
+            #     queries:
+            #         string:
+            #             - level: danger
+            #               when: equals
+            #               value: "0"
+            #     blocked:
+            #         string:
+            #             - level: danger
+            #               when: regex
+            #               value: "\\(0%\\)"
+            #     gravity:
+            #         string:
+            #             - level: danger
+            #               when: equals
+            #               value: "0"
+            - type: pihole
+              url: http://pihole.volo.nas
+              version: 6
+              highlight:
+                queries:
+                    string:
+                        - level: danger
+                          when: equals
+                          value: "0"
+                blocked:
+                    string:
+                        - level: danger
+                          when: regex
+                          value: "\\(0%\\)"
+                gravity:
+                    string:
+                        - level: danger
+                          when: equals
+                          value: "0"
+    - Speedtest:
+        icon: speedtest-tracker.png
+        href: http://speed.volo.nas
+        server: local-docker
+        container: ix-speedtest-tracker-speedtest-tracker-1
+        description: Network speed tracker
         widget:
-            type: pihole
-            url: http://pihole.volo.nas
-            version: 6
+            type: speedtest
+            url: http://speed.volo.nas
+            bitratePrecision: 0
+            fields: ["download", "upload", "ping"]
 ########################################################################################################################################################################################################
 - Network:
     - nGinx:
@@ -48,27 +94,6 @@
             key: {{HOMEPAGE_FILE_TRUENAS_KEY}}
             enablePools: true 
             nasType: core
-    - Speedtest:
-        icon: speedtest-tracker.png
-        href: http://speed.volo.nas
-        server: local-docker
-        container: ix-speedtest-tracker-speedtest-tracker-1
-        description: Network speed tracker
-        widget:
-            type: speedtest
-            url: http://speed.volo.nas
-            bitratePrecision: 0
-            fields: ["download", "upload", "ping"]
-    - PiHole:
-        icon: pi-hole.png
-        href: http://pihole.volo.nas/admin
-        container: ix-pihole-pihole-1
-        server: local-docker
-        description: Network-wide ad blocker
-        widget:
-            type: pihole
-            url: http://pihole.volo.nas
-            version: 6
     - nGinx:
         icon: nginx.png
         href: http://nginx.volo.nas
@@ -93,26 +118,49 @@
             password: {{HOMEPAGE_FILE_QBIT_KEY}}
             enableLeechProgress: true
             enableLeechSize: true
-    - Media Uptime:
+    - Uptime:
         icon: uptime-kuma.png
         href: http://kuma.volo.nas
         container: ix-uptime-kuma-uptime-kuma-1
         server: local-docker
         description: Monitor the status of your services
-        widget:
-            type: uptimekuma
-            url: http://kuma.volo.nas
-            slug: media-stack
-    - Support Uptime:
-        icon: uptime-kuma.png
-        href: http://kuma.volo.nas
-        container: ix-uptime-kuma-uptime-kuma-1
-        server: local-docker
-        description: Monitor the status of your services
-        widget:
-            type: uptimekuma
-            url: http://kuma.volo.nas
-            slug: support-svcs
+        widgets:
+            - type: uptimekuma
+              url: http://kuma.volo.nas
+              slug: media-stack
+              fields: ["up", "down", "uptime"]
+              highlight:
+                up:
+                    numeric:
+                        - level: danger
+                          when: eq
+                          value: 0
+                down:
+                    numeric:
+                        - level: warn
+                          when: gte
+                          value: 1
+                        - level: good
+                          when: eq
+                          value: 0
+            - type: uptimekuma
+              url: http://kuma.volo.nas
+              slug: support-svcs
+              fields: ["up", "down", "uptime"]
+              highlight:
+                up:
+                    numeric:
+                        - level: danger
+                          when: eq
+                          value: 0
+                down:
+                    numeric:
+                        - level: warn
+                          when: gte
+                          value: 1
+                        - level: good
+                          when: eq
+                          value: 0
 ########################################################################################################################################################################################################
 - Now Playing:
     - Jellyfin:

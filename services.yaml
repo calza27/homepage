@@ -5,7 +5,7 @@
 ########################################################################################################################################################################################################
 - Network System:
     - PiHole:
-        icon: pihole.png
+        icon: pi-hole.png
         href: http://pihole.volo.nas/admin
         container: ix-pihole-pihole-1
         server: local-docker
@@ -60,7 +60,7 @@
             bitratePrecision: 0
             fields: ["download", "upload", "ping"]
     - PiHole:
-        icon: pihole.png
+        icon: pi-hole.png
         href: http://pihole.volo.nas/admin
         container: ix-pihole-pihole-1
         server: local-docker

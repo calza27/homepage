@@ -4,32 +4,39 @@
 
 ########################################################################################################################################################################################################
 - Network System:
-    - PiHole:
+    # - Primary PiHole:
+    #     icon: pi-hole.png
+    #     href: http://pihole.emporer.net
+    #     container: pihole
+    #     server: emporer-docker
+    #     description: Primary network-wide ad blocker (emporer.net)
+    #     widgets:
+    #         - type: pihole
+    #           url: http://pihole.emporer.net
+    #           version: 6
+    #           highlight:
+    #             queries:
+    #                 string:
+    #                     - level: danger
+    #                       when: equals
+    #                       value: "0"
+    #             blocked:
+    #                 string:
+    #                     - level: danger
+    #                       when: regex
+    #                       value: "\\(0%\\)"
+    #             gravity:
+    #                 string:
+    #                     - level: danger
+    #                       when: equals
+    #                       value: "0"
+    - Secondary PiHole:
         icon: pi-hole.png
         href: http://pihole.volo.nas/admin
         container: ix-pihole-pihole-1
-        server: local-docker
-        description: Network-wide ad blocker
+        server: volo-docker
+        description: Secondary network-wide ad blocker (volo.nas)
         widgets:
-            # - type: pihole
-            #   url: http://pihole.emporer.net
-            #   version: 6
-            #   highlight:
-            #     queries:
-            #         string:
-            #             - level: danger
-            #               when: equals
-            #               value: "0"
-            #     blocked:
-            #         string:
-            #             - level: danger
-            #               when: regex
-            #               value: "\\(0%\\)"
-            #     gravity:
-            #         string:
-            #             - level: danger
-            #               when: equals
-            #               value: "0"
             - type: pihole
               url: http://pihole.volo.nas
               version: 6
@@ -52,7 +59,7 @@
     - Speedtest:
         icon: speedtest-tracker.png
         href: http://speed.volo.nas
-        server: local-docker
+        server: emporer-docker
         container: ix-speedtest-tracker-speedtest-tracker-1
         description: Network speed tracker
         widget:
@@ -100,7 +107,7 @@
         icon: nginx.png
         href: http://nginx.volo.nas
         container: ix-nginx-proxy-manager-npm-1
-        server: local-docker
+        server: emporer-docker
         description: Web server and reverse proxy
         widget:
             type: npm
@@ -158,7 +165,7 @@
         icon: nginx.png
         href: http://nginx.volo.nas
         container: ix-nginx-proxy-manager-npm-1
-        server: local-docker
+        server: volo-docker
         description: Web server and reverse proxy
         widget:
             type: npm
@@ -169,7 +176,7 @@
         icon: qbittorrent.png
         href: http://qbit.volo.nas
         container: qbittorrent
-        server: local-docker
+        server: volo-docker
         description: Torrent client
         widget:
             type: qbittorrent
@@ -182,7 +189,7 @@
         icon: uptime-kuma.png
         href: http://kuma.volo.nas
         container: ix-uptime-kuma-uptime-kuma-1
-        server: local-docker
+        server: volo-docker
         description: Monitor the status of your services
         widgets:
             - type: uptimekuma
@@ -227,7 +234,7 @@
         icon: jellyfin.png
         href: http://jellyfin.volo.nas
         container: ix-jellyfin-jellyfin-1
-        server: local-docker
+        server: volo-docker
         description: Multimedia streaming library
         widget:
             type: jellyfin
@@ -246,7 +253,7 @@
             icon: sonarr.png
             href: http://sonarr.volo.nas
             container: ix-sonarr-sonarr-1
-            server: local-docker
+            server: volo-docker
             description: Automate downloading series
             widget:
                 type: sonarr
@@ -257,7 +264,7 @@
             icon: radarr.png
             href: http://radarr.volo.nas
             container: ix-radarr-radarr-1
-            server: local-docker
+            server: volo-docker
             description: Automate downloading movies
             widget:
                 type: radarr
@@ -268,7 +275,7 @@
             icon: readarr.png
             href: http://bookshelf.volo.nas
             container: ix-bookshelf-bookshelf-1
-            server: local-docker
+            server: volo-docker
             description: Automate downloading books
             widget:
                 type: readarr
@@ -279,7 +286,7 @@
             icon: bazarr.png
             href: http://bazarr.volo.nas
             container: ix-bazarr-bazarr-1
-            server: local-docker
+            server: volo-docker
             description: Media subtitles management
             widget:
                 type: bazarr
@@ -290,7 +297,7 @@
             icon: prowlarr.png
             href: http://prowlarr.volo.nas
             container: ix-prowlarr-prowlarr-1
-            server: local-docker
+            server: volo-docker
             description: Indexer manager for Usenet and torrents
             widget:
                 type: prowlarr
@@ -301,7 +308,7 @@
             icon: seerr.png
             href: http://seer.volo.nas
             container: ix-jelly-seerr-seerr-1
-            server: local-docker
+            server: volo-docker
             description: Request management for Jellyfin
             widget:
                 type: seerr

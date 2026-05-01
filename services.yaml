@@ -210,6 +210,17 @@
                         - level: good
                           when: eq
                           value: 0
+                uptime:
+                    numeric:
+                        - level: danger
+                          when: lt
+                          value: 80
+                        - level: warn
+                          when: lt
+                          value: 98
+                        - level: good
+                          when: gte
+                          value: 98
             - type: uptimekuma
               url: http://kuma.volo.nas
               slug: support-svcs
@@ -228,6 +239,17 @@
                         - level: good
                           when: eq
                           value: 0
+                uptime:
+                    numeric:
+                        - level: danger
+                          when: lt
+                          value: 80
+                        - level: warn
+                          when: lt
+                          value: 98
+                        - level: good
+                          when: gte
+                          value: 98
 ########################################################################################################################################################################################################
 - Now Playing:
     - Jellyfin:

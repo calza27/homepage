@@ -10,6 +10,12 @@ headerStyle: boxed
 statusStyle: "dot"
 hideVersion: false
 disableCollapse: true
+cardBlur: sm
+background: 
+  image: https://images.unsplash.com/photo-1637825891028-564f672aa42c
+  blur: xl
+  brightness: 90
+  opacity: 60
 
 providers:
   openweathermap: openweathermapapikey
@@ -19,28 +25,37 @@ layout:
   # Emporer.net Items
   Network System:
     tab: Emporer.net
+    icon: mdi-desktop-classic-#FFFFFF
     style: row
     columns: 4
   Network:
     tab: Emporer.net
+    icon: mdi-network-#FFFFFF
     style: row
     columns: 2
   # Volo.nas Items
   Media System:
     tab: Volo.nas
+    icon: mdi-desktop-classic-#FFFFFF
     style: row
-    columns: 4
-  Now Playing:
+    columns: 3
+  MEDIA:
     tab: Volo.nas
     style: row
-    columns: 1
+    columns: 2
+    Now Playing:
+      icon: mdi-video-account-#FFFFFF
+    Downloading:
+      icon: mdi-download-#FFFFFF
   Media Stack:
     tab: Volo.nas
     style: row
     columns: 2
     Stack:
       style: row
+      icon: mdi-server-#FFFFFF
       columns: 2
     Release Calendar:
+      icon: mdi-calendar-account-outline-#FFFFFF
       style: row
       columns: 1

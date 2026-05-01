@@ -172,19 +172,6 @@
             url: http://nginx.volo.nas
             username: calza27@gmail.com
             password: {{HOMEPAGE_FILE_NGINX_KEY}}
-    - qBitTorrent:
-        icon: qbittorrent.png
-        href: http://qbit.volo.nas
-        container: qbittorrent
-        server: volo-docker
-        description: Torrent client
-        widget:
-            type: qbittorrent
-            url: http://qbit.volo.nas
-            username: admin
-            password: {{HOMEPAGE_FILE_QBIT_KEY}}
-            enableLeechProgress: true
-            enableLeechSize: true
     - Uptime:
         icon: uptime-kuma.png
         href: http://kuma.volo.nas
@@ -251,26 +238,107 @@
                           when: gte
                           value: 98
 ########################################################################################################################################################################################################
-- Now Playing:
-    - Jellyfin:
-        icon: jellyfin.png
-        href: http://jellyfin.volo.nas
-        container: ix-jellyfin-jellyfin-1
-        server: volo-docker
-        description: Multimedia streaming library
-        widget:
-            type: jellyfin
-            url: http://jellyfin.volo.nas
-            key: {{HOMEPAGE_FILE_JELLYFIN_KEY}}
-            enableBlocks: true 
-            enableNowPlaying: true
-            enableUser: true
-            showEpisodeNumber: true 
-            expandOneStreamToTwoRows: false
-            fields: ["movies", "series"]
+- MEDIA:
+    - Now Playing:
+        - Jellyfin:
+            icon: jellyfin.png
+            href: http://jellyfin.volo.nas
+            container: ix-jellyfin-jellyfin-1
+            server: volo-docker
+            description: Multimedia streaming library
+            widget:
+                type: jellyfin
+                url: http://jellyfin.volo.nas
+                key: {{HOMEPAGE_FILE_JELLYFIN_KEY}}
+                enableBlocks: true 
+                enableNowPlaying: true
+                enableUser: true
+                showEpisodeNumber: true 
+                expandOneStreamToTwoRows: false
+                fields: ["movies", "series"]
+    - Downloading:
+        - qBitTorrent:
+            icon: qbittorrent.png
+            href: http://qbit.volo.nas
+            container: qbittorrent
+            server: volo-docker
+            description: Torrent client
+            widget:
+                type: qbittorrent
+                url: http://qbit.volo.nas
+                username: admin
+                password: {{HOMEPAGE_FILE_QBIT_KEY}}
+                enableLeechProgress: true
+                enableLeechSize: true
 ########################################################################################################################################################################################################
 - Media Stack:
     - Stack:
+        - JellySeerr:
+            icon: seerr.png
+            href: http://seer.volo.nas
+            container: ix-jelly-seerr-seerr-1
+            server: volo-docker
+            description: Request management for Jellyfin
+            widgets:
+                - type: seerr
+                  url: http://seer.volo.nas
+                  key: {{HOMEPAGE_FILE_SEER_KEY}}
+                  fields: ["pending", "approved", "available"]
+                - type: seerr
+                  url: http://seer.volo.nas
+                  key: {{HOMEPAGE_FILE_SEER_KEY}}
+                  fields: ["completed", "processing", "issues"]
+        - Cleanuparr:
+            icon: cleanuparr.png
+            href: http://cleanuparr.volo.nas
+            container: ix-cleanuparr-cleanuparr-1
+            server: volo-docker
+            description: Download cleanup and management
+            widgets:
+                - type: customapi
+                  url: http://cleanuparr.volo.nas/api/stats?hours=24
+                  refreshInterval: 10000
+                  method: GET
+                  headers:
+                    X-Api-Key: {{HOMEPAGE_FILE_CLEANUPARR_KEY}}
+                  mappings:
+                    - field: events.byType.FailedImportStrike
+                      label: Fail Import Strikes
+                      format: number
+                      remap:
+                        - value: null
+                          to: 0
+                    - field: events.byType.StalledStrike
+                      label: Stall Strikes
+                      format: number
+                      remap:
+                        - value: null
+                          to: 0
+                    - field: events.byType.DownloadingMetadataStrike
+                      label: Metadata Strikes
+                      format: number
+                      remap:
+                        - value: null
+                          to: 0
+                - type: customapi
+                  url: http://cleanuparr.volo.nas/api/stats?hours=24
+                  refreshInterval: 10000
+                  method: GET
+                  headers:
+                    X-Api-Key: {{HOMEPAGE_FILE_CLEANUPARR_KEY}}
+                  mappings:
+                    - field: events.byType.QueueItemDeleted
+                      label: Queue Item Deleted
+                      format: number
+                      remap:
+                        - value: null
+                          to: 0
+                    - field: events.byType.DownloadCleaned
+                      label: Download Cleaned
+                      format: number
+                      remap:
+                        - value: null
+                          to: 0
         - Sonarr:
             icon: sonarr.png
             href: http://sonarr.volo.nas
@@ -326,17 +394,6 @@
                 url: http://prowlarr.volo.nas
                 key: {{HOMEPAGE_FILE_PROWLARR_KEY}}
                 fields: ["numberOfGrabs", "numberOfQueries", "numberOfFailGrabs", "numberOfFailQueries"]
-        - JellySeerr:
-            icon: seerr.png
-            href: http://seer.volo.nas
-            container: ix-jelly-seerr-seerr-1
-            server: volo-docker
-            description: Request management for Jellyfin
-            widget:
-                type: seerr
-                url: http://seer.volo.nas
-                key: {{HOMEPAGE_FILE_SEER_KEY}}
-                fields: ["pending", "approved", "available", "completed", "processing", "issues"]
     - Release Calendar:
         - " ":
             href: https://jellyfin.volo.nas

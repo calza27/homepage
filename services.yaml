@@ -36,6 +36,38 @@
     #         url: http://glances.emporer.net
     #         version: 4
     #         metric: network:eth0
+    # - CPU Temp 0:
+    #     icon: glances.png
+    #     href: http://glances.emporer.net
+    #     widget:
+    #         type: glances
+    #         url: http://glances.emporer.net
+    #         version: 4
+    #         metric: sensor:Core 0
+    # - CPU Temp 1:
+    #     icon: glances.png
+    #     href: http://glances.emporer.net
+    #     widget:
+    #         type: glances
+    #         url: http://glances.emporer.net
+    #         version: 4
+    #         metric: sensor:Core 1
+    # - CPU Temp 2:
+    #     icon: glances.png
+    #     href: http://glances.emporer.net
+    #     widget:
+    #         type: glances
+    #         url: http://glances.emporer.net
+    #         version: 4
+    #         metric: sensor:Core 2
+    # - CPU Temp 3:
+    #     icon: glances.png
+    #     href: http://glances.emporer.net
+    #     widget:
+    #         type: glances
+    #         url: http://glances.emporer.net
+    #         version: 4
+    #         metric: sensor:Core 3
     # - "Disk: Workload":
     #     icon: glances.png
     #     href: http://glances.emporer.net
@@ -44,26 +76,6 @@
     #         url: http://glances.emporer.net
     #         version: 4
     #         metric: disk:sda1
-    # - CPU Temp:
-    #     icon: glances.png
-    #     href: http://glances.emporer.net
-    #     widgets:
-    #         - type: glances
-    #           url: http://glances.emporer.net
-    #           version: 4
-    #           metric: sensor:Core 0
-    #         - type: glances
-    #           url: http://glances.emporer.net
-    #           version: 4
-    #           metric: sensor:Core 1
-    #         - type: glances
-    #           url: http://glances.emporer.net
-    #           version: 4
-    #           metric: sensor:Core 2
-    #         - type: glances
-    #           url: http://glances.emporer.net
-    #           version: 4
-    #           metric: sensor:Core 3
     - Speedtest:
         icon: speedtest-tracker.png
         href: http://speed.volo.nas

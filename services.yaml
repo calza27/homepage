@@ -4,6 +4,113 @@
 
 ########################################################################################################################################################################################################
 - Network System:
+    # - System Info:
+    #     icon: glances.png
+    #     href: http://glances.emporer.net
+    #     widget:
+    #         type: glances
+    #         url: http://glances.emporer.net
+    #         version: 4
+    #         metric: info
+    # - CPU:
+    #     icon: glances.png
+    #     href: http://glances.emporer.net
+    #     widget:
+    #         type: glances
+    #         url: http://glances.emporer.net
+    #         version: 4
+    #         metric: cpu
+    # - Memory:
+    #     icon: glances.png
+    #     href: http://glances.emporer.net
+    #     widget:
+    #         type: glances
+    #         url: http://glances.emporer.net
+    #         version: 4
+    #         metric: memory
+    # - Network:
+    #     icon: glances.png
+    #     href: http://glances.emporer.net
+    #     widget:
+    #         type: glances
+    #         url: http://glances.emporer.net
+    #         version: 4
+    #         metric: network:eth0
+    # - "Disk: Workload":
+    #     icon: glances.png
+    #     href: http://glances.emporer.net
+    #     widget:
+    #         type: glances
+    #         url: http://glances.emporer.net
+    #         version: 4
+    #         metric: disk:sda1
+    # - CPU Temp:
+    #     icon: glances.png
+    #     href: http://glances.emporer.net
+    #     widgets:
+    #         - type: glances
+    #           url: http://glances.emporer.net
+    #           version: 4
+    #           metric: sensor:Core 0
+    #         - type: glances
+    #           url: http://glances.emporer.net
+    #           version: 4
+    #           metric: sensor:Core 1
+    #         - type: glances
+    #           url: http://glances.emporer.net
+    #           version: 4
+    #           metric: sensor:Core 2
+    #         - type: glances
+    #           url: http://glances.emporer.net
+    #           version: 4
+    #           metric: sensor:Core 3
+    - Speedtest:
+        icon: speedtest-tracker.png
+        href: http://speed.volo.nas
+        server: emporer-docker
+        container: ix-speedtest-tracker-speedtest-tracker-1
+        description: Network speed tracker
+        widget:
+            type: speedtest
+            url: http://speed.volo.nas
+            bitratePrecision: 0
+            fields: ["download", "upload", "ping"]
+            highlight:
+                download:
+                    numeric:
+                        - level: danger
+                          when: lte
+                          value: 250
+                        - level: warn
+                          when: lte
+                          value: 450
+                        - level: good
+                          when: gte
+                          value: 450
+                upload:
+                    numeric:
+                        - level: danger
+                          when: lte
+                          value: 25
+                        - level: warn
+                          when: lte
+                          value: 45
+                        - level: good
+                          when: gte
+                          value: 45
+                ping:
+                    numeric:
+                        - level: danger
+                          when: gte
+                          value: 50
+                        - level: warn
+                          when: gte
+                          value: 20
+                        - level: good
+                          when: lt
+                          value: 20
+########################################################################################################################################################################################################
+- Network:
     # - Primary PiHole:
     #     icon: pi-hole.png
     #     href: http://pihole.emporer.net
@@ -56,53 +163,6 @@
                         - level: danger
                           when: equals
                           value: "0"
-    - Speedtest:
-        icon: speedtest-tracker.png
-        href: http://speed.volo.nas
-        server: emporer-docker
-        container: ix-speedtest-tracker-speedtest-tracker-1
-        description: Network speed tracker
-        widget:
-            type: speedtest
-            url: http://speed.volo.nas
-            bitratePrecision: 0
-            fields: ["download", "upload", "ping"]
-            highlight:
-                download:
-                    numeric:
-                        - level: danger
-                          when: lte
-                          value: 250
-                        - level: warn
-                          when: lte
-                          value: 450
-                        - level: good
-                          when: gte
-                          value: 450
-                upload:
-                    numeric:
-                        - level: danger
-                          when: lte
-                          value: 25
-                        - level: warn
-                          when: lte
-                          value: 45
-                        - level: good
-                          when: gte
-                          value: 45
-                ping:
-                    numeric:
-                        - level: danger
-                          when: gte
-                          value: 50
-                        - level: warn
-                          when: gte
-                          value: 20
-                        - level: good
-                          when: lt
-                          value: 20
-########################################################################################################################################################################################################
-- Network:
     - nGinx:
         icon: nginx.png
         href: http://nginx.volo.nas
@@ -150,6 +210,102 @@
                           value: 0
 ########################################################################################################################################################################################################
 - Media System:
+    - System Info:
+        icon: glances.png
+        href: http://glances.volo.nas
+        widget:
+            type: glances
+            url: http://glances.volo.nas
+            version: 4
+            metric: info
+    - CPU:
+        icon: glances.png
+        href: http://glances.volo.nas
+        widget:
+            type: glances
+            url: http://glances.volo.nas
+            version: 4
+            metric: cpu
+    - Memory:
+        icon: glances.png
+        href: http://glances.volo.nas
+        widget:
+            type: glances
+            url: http://glances.volo.nas
+            version: 4
+            metric: memory
+    - Network:
+        icon: glances.png
+        href: http://glances.volo.nas
+        widget:
+            type: glances
+            url: http://glances.volo.nas
+            version: 4
+            metric: network:eth0
+    - CPU Temp 0:
+        icon: glances.png
+        href: http://glances.volo.nas
+        widget:
+            type: glances
+            url: http://glances.volo.nas
+            version: 4
+            metric: sensor:Core 0
+    - CPU Temp 1:
+        icon: glances.png
+        href: http://glances.volo.nas
+        widget:
+            type: glances
+            url: http://glances.volo.nas
+            version: 4
+            metric: sensor:Core 1
+    - CPU Temp 2:
+        icon: glances.png
+        href: http://glances.volo.nas
+        widget:
+            type: glances
+            url: http://glances.volo.nas
+            version: 4
+            metric: sensor:Core 2
+    - CPU Temp 3:
+        icon: glances.png
+        href: http://glances.volo.nas
+        widget:
+            type: glances
+            url: http://glances.volo.nas
+            version: 4
+            metric: sensor:Core 3
+    - "Disk: Workload":
+        icon: glances.png
+        href: http://glances.volo.nas
+        widget:
+            type: glances
+            url: http://glances.volo.nas
+            version: 4
+            metric: disk:sdb1
+    - "Disk: Storage":
+        icon: glances.png
+        href: http://glances.volo.nas
+        widget:
+            type: glances
+            url: http://glances.volo.nas
+            version: 4
+            metric: disk:sdc1
+    - Top 5 Processes:
+        icon: glances.png
+        href: http://glances.volo.nas
+        widget:
+            type: glances
+            url: http://glances.volo.nas
+            version: 4
+            metric: process
+    - Top 5 Containers:
+        icon: glances.png
+        href: http://glances.volo.nas
+        widget:
+            type: glances
+            url: http://glances.volo.nas
+            version: 4
+            metric: containers
     - truenas:
         icon: truenas.png
         href: http://volo.nas

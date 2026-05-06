@@ -38,7 +38,7 @@ layout:
     tab: Volo.nas
     icon: mdi-desktop-classic-#FFFFFF
     style: row
-    columns: 3
+    columns: 4
   MEDIA:
     tab: Volo.nas
     style: row

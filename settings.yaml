@@ -50,7 +50,7 @@ layout:
   Media Stack:
     tab: Volo.nas
     style: row
-    columns: 2
+    columns: 3
     Stack:
       style: row
       icon: mdi-server-#FFFFFF

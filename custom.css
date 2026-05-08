@@ -1,0 +1,11 @@
+@media (min-width: 64rem) {
+    #layout-groups > .services-group:not(:first-child) {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 63rem) {
+    #layout-groups > .services-group:not(:first-child) {
+        margin-top: 20px;
+    }
+}

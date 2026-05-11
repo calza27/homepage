@@ -9,7 +9,6 @@ target: _self
 headerStyle: boxed
 statusStyle: "dot"
 hideVersion: false
-disableCollapse: true
 cardBlur: sm
 background: 
   image: https://images.unsplash.com/photo-1637825891028-564f672aa42c
@@ -36,26 +35,33 @@ layout:
   # Volo.nas Items
   Media System:
     tab: Volo.nas
-    icon: mdi-desktop-classic-#FFFFFF
-    style: row
-    columns: 4
+    System:
+      style: row
+      icon: mdi-desktop-classic-#FFFFFF
+      columns: 4
+    CPU:
+      icon: mdi-cpu-64-bit-#FFFFFF
+      style: row
+      columns: 4
+    Disk Activity:
+      icon: mdi-harddisk-#FFFFFF
+      style: row
+      columns: 4
+    System Apps:
+      icon: mdi-application-#FFFFFF
+      style: row
+      columns: 4
   MEDIA:
     tab: Volo.nas
     style: row
     columns: 2
     Now Playing:
       icon: mdi-video-account-#FFFFFF
-    Downloading:
-      icon: mdi-download-#FFFFFF
-  Media Stack:
-    tab: Volo.nas
-    style: row
-    columns: 3
-    Stack:
-      style: row
-      icon: mdi-server-#FFFFFF
-      columns: 2
     Release Calendar:
       icon: mdi-calendar-account-outline-#FFFFFF
       style: row
       columns: 1
+  Stack:
+    style: row
+    icon: mdi-server-#FFFFFF
+    columns: 4

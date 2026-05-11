@@ -258,160 +258,172 @@
                           value: 0
 ########################################################################################################################################################################################################
 - Media System:
-    - System Info:
-        icon: glances.png
-        href: http://glances.volo.nas
-        widget:
-            type: glances
-            url: http://glances.volo.nas
-            version: 4
-            metric: info
+    - System:
+        - System Info:
+            icon: glances.png
+            href: http://glances.volo.nas
+            widget:
+                type: glances
+                url: http://glances.volo.nas
+                version: 4
+                metric: info
+        - CPU:
+            icon: glances.png
+            href: http://glances.volo.nas
+            widget:
+                type: glances
+                url: http://glances.volo.nas
+                version: 4
+                metric: cpu
+        - Memory:
+            icon: glances.png
+            href: http://glances.volo.nas
+            widget:
+                type: glances
+                url: http://glances.volo.nas
+                version: 4
+                metric: memory
+        - Network:
+            icon: glances.png
+            href: http://glances.volo.nas
+            widget:
+                type: glances
+                url: http://glances.volo.nas
+                version: 4
+                metric: network:eth0
+        - Top 5 Processes:
+            icon: glances.png
+            href: http://glances.volo.nas
+            widget:
+                type: glances
+                url: http://glances.volo.nas
+                version: 4
+                metric: process
+        - Top 5 Containers:
+            icon: glances.png
+            href: http://glances.volo.nas
+            widget:
+                type: glances
+                url: http://glances.volo.nas
+                version: 4
+                metric: containers
     - CPU:
-        icon: glances.png
-        href: http://glances.volo.nas
-        widget:
-            type: glances
-            url: http://glances.volo.nas
-            version: 4
-            metric: cpu
-    - Memory:
-        icon: glances.png
-        href: http://glances.volo.nas
-        widget:
-            type: glances
-            url: http://glances.volo.nas
-            version: 4
-            metric: memory
-    - Network:
-        icon: glances.png
-        href: http://glances.volo.nas
-        widget:
-            type: glances
-            url: http://glances.volo.nas
-            version: 4
-            metric: network:eth0
-    - CPU Temp 0:
-        icon: glances.png
-        href: http://glances.volo.nas
-        widget:
-            type: glances
-            url: http://glances.volo.nas
-            version: 4
-            metric: sensor:Core 0
-    - CPU Temp 1:
-        icon: glances.png
-        href: http://glances.volo.nas
-        widget:
-            type: glances
-            url: http://glances.volo.nas
-            version: 4
-            metric: sensor:Core 1
-    - CPU Temp 2:
-        icon: glances.png
-        href: http://glances.volo.nas
-        widget:
-            type: glances
-            url: http://glances.volo.nas
-            version: 4
-            metric: sensor:Core 2
-    - CPU Temp 3:
-        icon: glances.png
-        href: http://glances.volo.nas
-        widget:
-            type: glances
-            url: http://glances.volo.nas
-            version: 4
-            metric: sensor:Core 3
-    - "Disk: Workload":
-        icon: glances.png
-        href: http://glances.volo.nas
-        widget:
-            type: glances
-            url: http://glances.volo.nas
-            version: 4
-            metric: disk:sdb1
-    - "Disk: Storage":
-        icon: glances.png
-        href: http://glances.volo.nas
-        widget:
-            type: glances
-            url: http://glances.volo.nas
-            version: 4
-            metric: disk:sdc1
-    - Top 5 Processes:
-        icon: glances.png
-        href: http://glances.volo.nas
-        widget:
-            type: glances
-            url: http://glances.volo.nas
-            version: 4
-            metric: process
-    - Top 5 Containers:
-        icon: glances.png
-        href: http://glances.volo.nas
-        widget:
-            type: glances
-            url: http://glances.volo.nas
-            version: 4
-            metric: containers
-    - truenas:
-        icon: truenas.png
-        href: http://volo.nas
-        description: The OS
-        widget:
-            type: truenas
-            url: http://volo.nas
-            version: 2
-            key: {{HOMEPAGE_FILE_TRUENAS_KEY}}
-            enablePools: true 
-            nasType: core
-    - nGinx:
-        icon: nginx.png
-        href: http://nginx.volo.nas
-        container: ix-nginx-proxy-manager-npm-1
-        server: volo-docker
-        description: Web server and reverse proxy
-        widget:
-            type: npm
-            url: http://nginx.volo.nas
-            username: calza27@gmail.com
-            password: {{HOMEPAGE_FILE_NGINX_KEY}}
-    - Media Uptime:
-        icon: uptime-kuma.png
-        href: http://kuma.volo.nas
-        container: ix-uptime-kuma-uptime-kuma-1
-        server: volo-docker
-        description: Monitor the status of your services
-        widget:
-            type: uptimekuma
-            url: http://kuma.volo.nas
-            slug: media-stack
-            fields: ["up", "down", "uptime"]
-            highlight:
-              up:
-                  numeric:
-                      - level: danger
-                        when: eq
-                        value: 0
-              down:
-                  numeric:
-                      - level: warn
-                        when: gte
-                        value: 1
-                      - level: good
-                        when: eq
-                        value: 0
-              uptime:
-                  numeric:
-                      - level: danger
-                        when: lt
-                        value: 80
-                      - level: warn
-                        when: lt
-                        value: 98
-                      - level: good
-                        when: gte
-                        value: 98
+        - CPU Temp 0:
+            icon: glances.png
+            href: http://glances.volo.nas
+            widget:
+                type: glances
+                url: http://glances.volo.nas
+                version: 4
+                metric: sensor:Core 0
+        - CPU Temp 1:
+            icon: glances.png
+            href: http://glances.volo.nas
+            widget:
+                type: glances
+                url: http://glances.volo.nas
+                version: 4
+                metric: sensor:Core 1
+        - CPU Temp 2:
+            icon: glances.png
+            href: http://glances.volo.nas
+            widget:
+                type: glances
+                url: http://glances.volo.nas
+                version: 4
+                metric: sensor:Core 2
+        - CPU Temp 3:
+            icon: glances.png
+            href: http://glances.volo.nas
+            widget:
+                type: glances
+                url: http://glances.volo.nas
+                version: 4
+                metric: sensor:Core 3
+    - Disk Activity:
+        - Workload:
+            icon: glances.png
+            href: http://glances.volo.nas
+            widget:
+                type: glances
+                url: http://glances.volo.nas
+                version: 4
+                metric: disk:sdb
+        - Storage:
+            icon: glances.png
+            href: http://glances.volo.nas
+            widget:
+                type: glances
+                url: http://glances.volo.nas
+                version: 4
+                metric: disk:sdc
+        - Documents:
+            icon: glances.png
+            href: http://glances.volo.nas
+            widget:
+                type: glances
+                url: http://glances.volo.nas
+                version: 4
+                metric: disk:sdd
+    - System Apps:
+        - TrueNAS:
+            icon: truenas.png
+            href: http://volo.nas
+            description: The OS
+            widget:
+                type: truenas
+                url: http://volo.nas
+                version: 2
+                key: {{HOMEPAGE_FILE_TRUENAS_KEY}}
+                enablePools: true 
+                nasType: core
+        - nGinx:
+            icon: nginx.png
+            href: http://nginx.volo.nas
+            container: ix-nginx-proxy-manager-npm-1
+            server: volo-docker
+            description: Web server and reverse proxy
+            widget:
+                type: npm
+                url: http://nginx.volo.nas
+                username: calza27@gmail.com
+                password: {{HOMEPAGE_FILE_NGINX_KEY}}
+        - Media Uptime:
+            icon: uptime-kuma.png
+            href: http://kuma.volo.nas
+            container: ix-uptime-kuma-uptime-kuma-1
+            server: volo-docker
+            description: Monitor the status of your services
+            widget:
+                type: uptimekuma
+                url: http://kuma.volo.nas
+                slug: media-stack
+                fields: ["up", "down", "uptime"]
+                highlight:
+                  up:
+                      numeric:
+                          - level: danger
+                            when: eq
+                            value: 0
+                  down:
+                      numeric:
+                          - level: warn
+                            when: gte
+                            value: 1
+                          - level: good
+                            when: eq
+                            value: 0
+                  uptime:
+                      numeric:
+                          - level: danger
+                            when: lt
+                            value: 80
+                          - level: warn
+                            when: lt
+                            value: 98
+                          - level: good
+                            when: gte
+                            value: 98
 ########################################################################################################################################################################################################
 - MEDIA:
     - Now Playing:
@@ -431,144 +443,6 @@
                 showEpisodeNumber: true 
                 expandOneStreamToTwoRows: false
                 fields: ["movies", "series"]
-    - Downloading:
-        - qBitTorrent:
-            icon: qbittorrent.png
-            href: http://qbit.volo.nas
-            container: qbittorrent
-            server: volo-docker
-            description: Torrent client
-            widget:
-                type: qbittorrent
-                url: http://qbit.volo.nas
-                username: admin
-                password: {{HOMEPAGE_FILE_QBIT_KEY}}
-                enableLeechProgress: true
-                enableLeechSize: true
-########################################################################################################################################################################################################
-- Media Stack:
-    - Stack:
-        - JellySeerr:
-            icon: seerr.png
-            href: http://seer.volo.nas
-            container: ix-jelly-seerr-seerr-1
-            server: volo-docker
-            description: Request management for Jellyfin
-            widgets:
-                - type: seerr
-                  url: http://seer.volo.nas
-                  key: {{HOMEPAGE_FILE_SEER_KEY}}
-                  fields: ["pending", "approved", "available"]
-                - type: seerr
-                  url: http://seer.volo.nas
-                  key: {{HOMEPAGE_FILE_SEER_KEY}}
-                  fields: ["completed", "processing", "issues"]
-        - Cleanuparr:
-            icon: cleanuparr.png
-            href: http://cleanuparr.volo.nas
-            container: ix-cleanuparr-cleanuparr-1
-            server: volo-docker
-            description: Download cleanup and management
-            widgets:
-                - type: customapi
-                  url: http://cleanuparr.volo.nas/api/stats?hours=24
-                  refreshInterval: 10000
-                  method: GET
-                  headers:
-                    X-Api-Key: {{HOMEPAGE_FILE_CLEANUPARR_KEY}}
-                  mappings:
-                    - field: events.byType.FailedImportStrike
-                      label: Fail Import Strikes
-                      format: number
-                      remap:
-                        - value: null
-                          to: 0
-                    - field: events.byType.StalledStrike
-                      label: Stall Strikes
-                      format: number
-                      remap:
-                        - value: null
-                          to: 0
-                    - field: events.byType.DownloadingMetadataStrike
-                      label: Metadata Strikes
-                      format: number
-                      remap:
-                        - value: null
-                          to: 0
-                - type: customapi
-                  url: http://cleanuparr.volo.nas/api/stats?hours=24
-                  refreshInterval: 10000
-                  method: GET
-                  headers:
-                    X-Api-Key: {{HOMEPAGE_FILE_CLEANUPARR_KEY}}
-                  mappings:
-                    - field: events.byType.QueueItemDeleted
-                      label: Queue Item Deleted
-                      format: number
-                      remap:
-                        - value: null
-                          to: 0
-                    - field: events.byType.DownloadCleaned
-                      label: Download Cleaned
-                      format: number
-                      remap:
-                        - value: null
-                          to: 0
-        - Sonarr:
-            icon: sonarr.png
-            href: http://sonarr.volo.nas
-            container: ix-sonarr-sonarr-1
-            server: volo-docker
-            description: Automate downloading series
-            widget:
-                type: sonarr
-                url: http://sonarr.volo.nas
-                key: {{HOMEPAGE_FILE_SONARR_KEY}}
-                fields: ["wanted", "queued", "series"]
-        - Radarr:
-            icon: radarr.png
-            href: http://radarr.volo.nas
-            container: ix-radarr-radarr-1
-            server: volo-docker
-            description: Automate downloading movies
-            widget:
-                type: radarr
-                url: http://radarr.volo.nas
-                key: {{HOMEPAGE_FILE_RADARR_KEY}}
-                fields: ["wanted", "queued", "movies"]
-        - Bookshelf:
-            icon: readarr.png
-            href: http://bookshelf.volo.nas
-            container: ix-bookshelf-bookshelf-1
-            server: volo-docker
-            description: Automate downloading books
-            widget:
-                type: readarr
-                url: http://bookshelf.volo.nas
-                key: {{HOMEPAGE_FILE_BOOKSHELF_KEY}}
-                fields: ["wanted", "queued", "books"]
-        - Bazarr:
-            icon: bazarr.png
-            href: http://bazarr.volo.nas
-            container: ix-bazarr-bazarr-1
-            server: volo-docker
-            description: Media subtitles management
-            widget:
-                type: bazarr
-                url: http://bazarr.volo.nas
-                key: {{HOMEPAGE_FILE_BAZARR_KEY}}
-                fields: ["missingEpisodes", "missingMovies"]
-        - Prowlarr:
-            icon: prowlarr.png
-            href: http://prowlarr.volo.nas
-            container: ix-prowlarr-prowlarr-1
-            server: volo-docker
-            description: Indexer manager for Usenet and torrents
-            widget:
-                type: prowlarr
-                url: http://prowlarr.volo.nas
-                key: {{HOMEPAGE_FILE_PROWLARR_KEY}}
-                fields: ["numberOfGrabs", "numberOfQueries", "numberOfFailGrabs", "numberOfFailQueries"]
     - Release Calendar:
         - " ":
             href: https://jellyfin.volo.nas
@@ -592,4 +466,140 @@
                       color: blue
                       params:
                         unmonitored: false
+########################################################################################################################################################################################################
+- Stack:
+    - qBitTorrent:
+        icon: qbittorrent.png
+        href: http://qbit.volo.nas
+        container: qbittorrent
+        server: volo-docker
+        description: Torrent client
+        widget:
+            type: qbittorrent
+            url: http://qbit.volo.nas
+            username: admin
+            password: {{HOMEPAGE_FILE_QBIT_KEY}}
+            enableLeechProgress: true
+            enableLeechSize: true
+    - JellySeerr:
+        icon: seerr.png
+        href: http://seer.volo.nas
+        container: ix-jelly-seerr-seerr-1
+        server: volo-docker
+        description: Request management for Jellyfin
+        widgets:
+            - type: seerr
+              url: http://seer.volo.nas
+              key: {{HOMEPAGE_FILE_SEER_KEY}}
+              fields: ["pending", "approved", "available"]
+            - type: seerr
+              url: http://seer.volo.nas
+              key: {{HOMEPAGE_FILE_SEER_KEY}}
+              fields: ["completed", "processing", "issues"]
+    - Cleanuparr:
+        icon: cleanuparr.png
+        href: http://cleanuparr.volo.nas
+        container: ix-cleanuparr-cleanuparr-1
+        server: volo-docker
+        description: Download cleanup and management
+        widgets:
+            - type: customapi
+              url: http://cleanuparr.volo.nas/api/stats?hours=24
+              refreshInterval: 10000
+              method: GET
+              headers:
+                X-Api-Key: {{HOMEPAGE_FILE_CLEANUPARR_KEY}}
+              mappings:
+                - field: events.byType.FailedImportStrike
+                  label: Fail Import Strikes
+                  format: number
+                  remap:
+                    - value: null
+                      to: 0
+                - field: events.byType.StalledStrike
+                  label: Stall Strikes
+                  format: number
+                  remap:
+                    - value: null
+                      to: 0
+                - field: events.byType.DownloadingMetadataStrike
+                  label: Metadata Strikes
+                  format: number
+                  remap:
+                    - value: null
+                      to: 0
+            - type: customapi
+              url: http://cleanuparr.volo.nas/api/stats?hours=24
+              refreshInterval: 10000
+              method: GET
+              headers:
+                X-Api-Key: {{HOMEPAGE_FILE_CLEANUPARR_KEY}}
+              mappings:
+                - field: events.byType.QueueItemDeleted
+                  label: Queue Item Deleted
+                  format: number
+                  remap:
+                    - value: null
+                      to: 0
+                - field: events.byType.DownloadCleaned
+                  label: Download Cleaned
+                  format: number
+                  remap:
+                    - value: null
+                      to: 0
+    - Sonarr:
+        icon: sonarr.png
+        href: http://sonarr.volo.nas
+        container: ix-sonarr-sonarr-1
+        server: volo-docker
+        description: Automate downloading series
+        widget:
+            type: sonarr
+            url: http://sonarr.volo.nas
+            key: {{HOMEPAGE_FILE_SONARR_KEY}}
+            fields: ["wanted", "queued", "series"]
+    - Radarr:
+        icon: radarr.png
+        href: http://radarr.volo.nas
+        container: ix-radarr-radarr-1
+        server: volo-docker
+        description: Automate downloading movies
+        widget:
+            type: radarr
+            url: http://radarr.volo.nas
+            key: {{HOMEPAGE_FILE_RADARR_KEY}}
+            fields: ["wanted", "queued", "movies"]
+    - Bookshelf:
+        icon: readarr.png
+        href: http://bookshelf.volo.nas
+        container: ix-bookshelf-bookshelf-1
+        server: volo-docker
+        description: Automate downloading books
+        widget:
+            type: readarr
+            url: http://bookshelf.volo.nas
+            key: {{HOMEPAGE_FILE_BOOKSHELF_KEY}}
+            fields: ["wanted", "queued", "books"]
+    - Bazarr:
+        icon: bazarr.png
+        href: http://bazarr.volo.nas
+        container: ix-bazarr-bazarr-1
+        server: volo-docker
+        description: Media subtitles management
+        widget:
+            type: bazarr
+            url: http://bazarr.volo.nas
+            key: {{HOMEPAGE_FILE_BAZARR_KEY}}
+            fields: ["missingEpisodes", "missingMovies"]
+    - Prowlarr:
+        icon: prowlarr.png
+        href: http://prowlarr.volo.nas
+        container: ix-prowlarr-prowlarr-1
+        server: volo-docker
+        description: Indexer manager for Usenet and torrents
+        widget:
+            type: prowlarr
+            url: http://prowlarr.volo.nas
+            key: {{HOMEPAGE_FILE_PROWLARR_KEY}}
+            fields: ["numberOfGrabs", "numberOfQueries", "numberOfFailGrabs", "numberOfFailQueries"]
 ########################################################################################################################################################################################################

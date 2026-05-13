@@ -66,10 +66,6 @@ layout:
     columns: 4
     tab: Volo.nas System
   # Volo.nas App Items
-  # Media:
-  #   tab: Volo.nas Apps
-  #   style: row
-  #   columns: 2
   Now Showing:
     tab: Volo.nas Apps
     icon: mdi-video-account-#FFFFFF

@@ -32,36 +32,51 @@ layout:
     icon: mdi-network-#FFFFFF
     style: row
     columns: 2
-  # Volo.nas Items
-  Media System:
-    tab: Volo.nas
-    System:
+  # Volo.nas System Items
+  System:
+    style: row
+    icon: mdi-desktop-classic-#FFFFFF
+    columns: 4
+    tab: Volo.nas System
+  CPU Temps:
+    icon: mdi-cpu-64-bit-#FFFFFF
+    style: row
+    columns: 4
+    tab: Volo.nas System
+  Disk Activity:
+    icon: mdi-harddisk-#FFFFFF
+    style: row
+    columns: 1
+    tab: Volo.nas System
+    Disk Activity > Workload:
+      icon: mdi-chart-timeline-variant-shimmer-#FFFFFF
       style: row
-      icon: mdi-desktop-classic-#FFFFFF
       columns: 4
-    CPU:
-      icon: mdi-cpu-64-bit-#FFFFFF
+    Disk Activity > Media:
+      icon: mdi-video-#FFFFFF
       style: row
       columns: 4
-    Disk Activity:
-      icon: mdi-harddisk-#FFFFFF
+    Disk Activity > Documents:
+      icon: mdi-file-document-#FFFFFF
       style: row
       columns: 4
-    System Apps:
-      icon: mdi-application-#FFFFFF
-      style: row
-      columns: 4
-  MEDIA:
-    tab: Volo.nas
+  System Apps:
+    icon: mdi-application-#FFFFFF
+    style: row
+    columns: 4
+    tab: Volo.nas System
+  # Volo.nas App Items
+  # Media:
+  #   tab: Volo.nas Apps
+  #   style: row
+  #   columns: 2
+  Now Showing:
+    tab: Volo.nas Apps
+    icon: mdi-video-account-#FFFFFF
     style: row
     columns: 2
-    Now Playing:
-      icon: mdi-video-account-#FFFFFF
-    Release Calendar:
-      icon: mdi-calendar-account-outline-#FFFFFF
-      style: row
-      columns: 1
-  Stack:
+  Media Stack:
+    tab: Volo.nas Apps
     style: row
     icon: mdi-server-#FFFFFF
     columns: 4

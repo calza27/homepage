@@ -434,7 +434,7 @@
             url: http://nginx.volo.nas
             username: calza27@gmail.com
             password: {{HOMEPAGE_FILE_NGINX_VOLO_KEY}}
-    - Media Uptime:
+    - Media Support Uptime:
         icon: uptime-kuma.png
         href: http://kuma.volo.nas
         container: ix-uptime-kuma-uptime-kuma-1
@@ -443,65 +443,7 @@
         widgets:
             - type: uptimekuma
               url: http://kuma.emporer.net
-              slug: media-stack
-              fields: ["up", "down", "uptime"]
-              highlight:
-                up:
-                    numeric:
-                        - level: danger
-                          when: eq
-                          value: 0
-                down:
-                    numeric:
-                        - level: warn
-                          when: gte
-                          value: 1
-                        - level: good
-                          when: eq
-                          value: 0
-                uptime:
-                    numeric:
-                        - level: danger
-                          when: lt
-                          value: 80
-                        - level: warn
-                          when: lt
-                          value: 98
-                        - level: good
-                          when: gte
-                          value: 98
-            - type: uptimekuma
-              url: http://kuma.emporer.net
               slug: support-svcs
-              fields: ["up", "down", "uptime"]
-              highlight:
-                up:
-                    numeric:
-                        - level: danger
-                          when: eq
-                          value: 0
-                down:
-                    numeric:
-                        - level: warn
-                          when: gte
-                          value: 1
-                        - level: good
-                          when: eq
-                          value: 0
-                uptime:
-                    numeric:
-                        - level: danger
-                          when: lt
-                          value: 80
-                        - level: warn
-                          when: lt
-                          value: 98
-                        - level: good
-                          when: gte
-                          value: 98
-            - type: uptimekuma
-              url: http://kuma.emporer.net
-              slug: documents
               fields: ["up", "down", "uptime"]
               highlight:
                 up:
@@ -571,6 +513,42 @@
                     unmonitored: false
 ########################################################################################################################################################################################################
 - Media Stack:
+    - Media Stack Uptime:
+        icon: uptime-kuma.png
+        href: http://kuma.volo.nas
+        container: ix-uptime-kuma-uptime-kuma-1
+        server: volo-docker
+        description: Monitor the status of your services
+        widgets:
+            - type: uptimekuma
+              url: http://kuma.emporer.net
+              slug: media-stack
+              fields: ["up", "down", "uptime"]
+              highlight:
+                up:
+                    numeric:
+                        - level: danger
+                          when: eq
+                          value: 0
+                down:
+                    numeric:
+                        - level: warn
+                          when: gte
+                          value: 1
+                        - level: good
+                          when: eq
+                          value: 0
+                uptime:
+                    numeric:
+                        - level: danger
+                          when: lt
+                          value: 80
+                        - level: warn
+                          when: lt
+                          value: 98
+                        - level: good
+                          when: gte
+                          value: 98
     - qBitTorrent:
         icon: qbittorrent.png
         href: http://qbit.volo.nas
@@ -706,3 +684,40 @@
             key: {{HOMEPAGE_FILE_PROWLARR_KEY}}
             fields: ["numberOfGrabs", "numberOfQueries", "numberOfFailGrabs", "numberOfFailQueries"]
 ########################################################################################################################################################################################################
+- Documents Stack:
+    - Documents Stack Uptime:
+        icon: uptime-kuma.png
+        href: http://kuma.volo.nas
+        container: ix-uptime-kuma-uptime-kuma-1
+        server: volo-docker
+        description: Monitor the status of your services
+        widgets:
+            - type: uptimekuma
+              url: http://kuma.emporer.net
+              slug: documents
+              fields: ["up", "down", "uptime"]
+              highlight:
+                up:
+                    numeric:
+                        - level: danger
+                          when: eq
+                          value: 0
+                down:
+                    numeric:
+                        - level: warn
+                          when: gte
+                          value: 1
+                        - level: good
+                          when: eq
+                          value: 0
+                uptime:
+                    numeric:
+                        - level: danger
+                          when: lt
+                          value: 80
+                        - level: warn
+                          when: lt
+                          value: 98
+                        - level: good
+                          when: gte
+                          value: 98

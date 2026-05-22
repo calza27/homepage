@@ -4,87 +4,87 @@
 
 ########################################################################################################################################################################################################
 - Network System:
-    # - System Info:
-    #     
-    #     href: http://glances.emporer.net
-    #     widget:
-    #         type: glances
-    #         url: http://glances.emporer.net
-    #         version: 4
-    #         metric: info
-    # - CPU:
-    #     
-    #     href: http://glances.emporer.net
-    #     widget:
-    #         type: glances
-    #         url: http://glances.emporer.net
-    #         version: 4
-    #         metric: cpu
-    # - Memory:
-    #     
-    #     href: http://glances.emporer.net
-    #     widget:
-    #         type: glances
-    #         url: http://glances.emporer.net
-    #         version: 4
-    #         metric: memory
-    # - Network:
-    #     
-    #     href: http://glances.emporer.net
-    #     widget:
-    #         type: glances
-    #         url: http://glances.emporer.net
-    #         version: 4
-    #         metric: network:eth0
-    # - CPU Temp 0:
-    #     
-    #     href: http://glances.emporer.net
-    #     widget:
-    #         type: glances
-    #         url: http://glances.emporer.net
-    #         version: 4
-    #         metric: sensor:Core 0
-    # - CPU Temp 1:
-    #     
-    #     href: http://glances.emporer.net
-    #     widget:
-    #         type: glances
-    #         url: http://glances.emporer.net
-    #         version: 4
-    #         metric: sensor:Core 1
-    # - CPU Temp 2:
-    #     
-    #     href: http://glances.emporer.net
-    #     widget:
-    #         type: glances
-    #         url: http://glances.emporer.net
-    #         version: 4
-    #         metric: sensor:Core 2
-    # - CPU Temp 3:
-    #     
-    #     href: http://glances.emporer.net
-    #     widget:
-    #         type: glances
-    #         url: http://glances.emporer.net
-    #         version: 4
-    #         metric: sensor:Core 3
-    # - "Disk: Workload":
-    #     
-    #     href: http://glances.emporer.net
-    #     widget:
-    #         type: glances
-    #         url: http://glances.emporer.net
-    #         version: 4
-    #         metric: disk:sda1
+    - System Info:
+        
+        href: http://glances.emporer.net
+        widget:
+            type: glances
+            url: http://glances.emporer.net
+            version: 4
+            metric: info
+    - CPU:
+        
+        href: http://glances.emporer.net
+        widget:
+            type: glances
+            url: http://glances.emporer.net
+            version: 4
+            metric: cpu
+    - Memory:
+        
+        href: http://glances.emporer.net
+        widget:
+            type: glances
+            url: http://glances.emporer.net
+            version: 4
+            metric: memory
+    - Network:
+        
+        href: http://glances.emporer.net
+        widget:
+            type: glances
+            url: http://glances.emporer.net
+            version: 4
+            metric: network:eth0
+    - CPU Temp 0:
+        
+        href: http://glances.emporer.net
+        widget:
+            type: glances
+            url: http://glances.emporer.net
+            version: 4
+            metric: sensor:Core 0
+    - CPU Temp 1:
+        
+        href: http://glances.emporer.net
+        widget:
+            type: glances
+            url: http://glances.emporer.net
+            version: 4
+            metric: sensor:Core 1
+    - CPU Temp 2:
+        
+        href: http://glances.emporer.net
+        widget:
+            type: glances
+            url: http://glances.emporer.net
+            version: 4
+            metric: sensor:Core 2
+    - CPU Temp 3:
+        
+        href: http://glances.emporer.net
+        widget:
+            type: glances
+            url: http://glances.emporer.net
+            version: 4
+            metric: sensor:Core 3
+    - "Disk: Workload":
+        
+        href: http://glances.emporer.net
+        widget:
+            type: glances
+            url: http://glances.emporer.net
+            version: 4
+            metric: disk:sda
     - Speedtest:
         icon: speedtest-tracker.png
-        href: http://speed.volo.nas
+        href: http://speed.emporer.net
         server: emporer-docker
-        container: ix-speedtest-tracker-speedtest-tracker-1
+        container: speedtest-tracker
         description: Network speed tracker
         widget:
             type: speedtest
-            url: http://speed.volo.nas
+            url: http://speed.emporer.net
             bitratePrecision: 0
             fields: ["download", "upload", "ping"]
             highlight:
@@ -123,32 +123,32 @@
                           value: 20
 ########################################################################################################################################################################################################
 - Network:
-    # - Primary PiHole:
-    #     icon: pi-hole.png
-    #     href: http://pihole.emporer.net
-    #     container: pihole
-    #     server: emporer-docker
-    #     description: Primary network-wide ad blocker (emporer.net)
-    #     widgets:
-    #         - type: pihole
-    #           url: http://pihole.emporer.net
-    #           version: 6
-    #           highlight:
-    #             queries:
-    #                 string:
-    #                     - level: danger
-    #                       when: equals
-    #                       value: "0"
-    #             blocked:
-    #                 string:
-    #                     - level: danger
-    #                       when: regex
-    #                       value: "\\(0%\\)"
-    #             gravity:
-    #                 string:
-    #                     - level: danger
-    #                       when: equals
-    #                       value: "0"
+    - Primary PiHole:
+        icon: pi-hole.png
+        href: http://pihole.emporer.net
+        container: pihole
+        server: emporer-docker
+        description: Primary network-wide ad blocker (emporer.net)
+        widgets:
+            - type: pihole
+              url: http://pihole.emporer.net
+              version: 6
+              highlight:
+                queries:
+                    string:
+                        - level: danger
+                          when: equals
+                          value: "0"
+                blocked:
+                    string:
+                        - level: danger
+                          when: regex
+                          value: "\\(0%\\)"
+                gravity:
+                    string:
+                        - level: danger
+                          when: equals
+                          value: "0"
     - Secondary PiHole:
         icon: pi-hole.png
         href: http://pihole.volo.nas/admin
@@ -177,13 +177,13 @@
                           value: "0"
     - Network Uptime:
         icon: uptime-kuma.png
-        href: http://kuma.volo.nas
+        href: http://kuma.emporer.net
         container: ix-uptime-kuma-uptime-kuma-1
         server: volo-docker
         description: Monitor the status of your services
         widget:
             type: uptimekuma
-            url: http://kuma.volo.nas
+            url: http://kuma.emporer.net
             slug: support-svcs
             fields: ["up", "down", "uptime"]
             highlight:
@@ -213,15 +213,15 @@
                         value: 98
     - nGinx:
         icon: nginx.png
-        href: http://nginx.volo.nas
+        href: http://nginx.emporer.net
         container: ix-nginx-proxy-manager-npm-1
         server: emporer-docker
         description: Web server and reverse proxy
         widget:
             type: npm
-            url: http://nginx.volo.nas
+            url: http://nginx.emporer.net
             username: calza27@gmail.com
-            password: {{HOMEPAGE_FILE_NGINX_KEY}}
+            password: {{HOMEPAGE_FILE_NGINX_EMP_KEY}}
     - unifi:
         icon: unifi.png
         href: https://192.168.3.21
@@ -397,7 +397,7 @@
             type: npm
             url: http://nginx.volo.nas
             username: calza27@gmail.com
-            password: {{HOMEPAGE_FILE_NGINX_KEY}}
+            password: {{HOMEPAGE_FILE_NGINX_VOLO_KEY}}
     - Media Uptime:
         icon: uptime-kuma.png
         href: http://kuma.volo.nas

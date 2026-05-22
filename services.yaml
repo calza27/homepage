@@ -181,7 +181,7 @@
                         - level: good
                           when: lt
                           value: 20
-    - nGinx:
+    - Emporer nGinx:
         icon: nginx.png
         href: http://nginx.emporer.net
         container: nginx-proxy-manager
@@ -429,7 +429,7 @@
             key: {{HOMEPAGE_FILE_TRUENAS_KEY}}
             enablePools: true 
             nasType: core
-    - nGinx:
+    - Volo nGinx:
         icon: nginx.png
         href: http://nginx.volo.nas
         container: ix-nginx-proxy-manager-npm-1

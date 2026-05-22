@@ -5,7 +5,6 @@
 ########################################################################################################################################################################################################
 - Network System:
     - System Info:
-        
         href: http://glances.emporer.net
         widget:
             type: glances
@@ -13,7 +12,6 @@
             version: 4
             metric: info
     - CPU:
-        
         href: http://glances.emporer.net
         widget:
             type: glances
@@ -21,7 +19,6 @@
             version: 4
             metric: cpu
     - Memory:
-        
         href: http://glances.emporer.net
         widget:
             type: glances
@@ -29,15 +26,35 @@
             version: 4
             metric: memory
     - Network:
-        
         href: http://glances.emporer.net
         widget:
             type: glances
             url: http://glances.emporer.net
             version: 4
             metric: network:eno1
+    - Top 5 Processes:
+        href: http://glances.emporer.net
+        widget:
+            type: glances
+            url: http://glances.emporer.net
+            version: 4
+            metric: process
+    - Top 5 Containers:
+        href: http://glances.emporer.net
+        widget:
+            type: glances
+            url: http://glances.emporer.net
+            version: 4
+            metric: containers
+    - Disk:
+        href: http://glances.emporer.net
+        widget:
+            type: glances
+            url: http://glances.emporer.net
+            version: 4
+            metric: disk:sda
+- Emporer CPU Temps:
     - CPU Temp 0:
-        
         href: http://glances.emporer.net
         widget:
             type: glances
@@ -45,7 +62,6 @@
             version: 4
             metric: sensor:Core 0
     - CPU Temp 1:
-        
         href: http://glances.emporer.net
         widget:
             type: glances
@@ -53,7 +69,6 @@
             version: 4
             metric: sensor:Core 1
     - CPU Temp 2:
-        
         href: http://glances.emporer.net
         widget:
             type: glances
@@ -61,21 +76,12 @@
             version: 4
             metric: sensor:Core 2
     - CPU Temp 3:
-        
         href: http://glances.emporer.net
         widget:
             type: glances
             url: http://glances.emporer.net
             version: 4
             metric: sensor:Core 3
-    - "Disk: Workload":
-        
-        href: http://glances.emporer.net
-        widget:
-            type: glances
-            url: http://glances.emporer.net
-            version: 4
-            metric: disk:sda
 ########################################################################################################################################################################################################
 - Network:
     - Primary PiHole:

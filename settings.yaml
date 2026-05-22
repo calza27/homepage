@@ -27,6 +27,11 @@ layout:
     icon: mdi-desktop-classic-#FFFFFF
     style: row
     columns: 4
+  Emporer CPU Temps:
+    icon: mdi-cpu-64-bit-#FFFFFF
+    style: row
+    columns: 4
+    tab: Emporer.net
   Network:
     tab: Emporer.net
     icon: mdi-network-#FFFFFF

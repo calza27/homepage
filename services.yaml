@@ -175,6 +175,17 @@
                         - level: good
                           when: lt
                           value: 20
+    - nGinx:
+        icon: nginx.png
+        href: http://nginx.emporer.net
+        container: nginx-proxy-manager
+        server: emporer-docker
+        description: Web server and reverse proxy
+        widget:
+            type: npm
+            url: http://nginx.emporer.net
+            username: calza27@gmail.com
+            password: {{HOMEPAGE_FILE_NGINX_EMP_KEY}}
     - Network Uptime:
         icon: uptime-kuma.png
         href: http://kuma.emporer.net
@@ -211,6 +222,13 @@
                         - level: good
                           when: gte
                           value: 98
+    - Support Uptime:
+        icon: uptime-kuma.png
+        href: http://kuma.emporer.net
+        container: uptime-kuma
+        server: emporer-docker
+        description: Monitor the status of your services
+        widgets:
             - type: uptimekuma
               url: http://kuma.emporer.net
               slug: emp-support
@@ -240,17 +258,6 @@
                         - level: good
                           when: gte
                           value: 98
-    - nGinx:
-        icon: nginx.png
-        href: http://nginx.emporer.net
-        container: nginx-proxy-manager
-        server: emporer-docker
-        description: Web server and reverse proxy
-        widget:
-            type: npm
-            url: http://nginx.emporer.net
-            username: calza27@gmail.com
-            password: {{HOMEPAGE_FILE_NGINX_EMP_KEY}}
     - unifi:
         icon: unifi.png
         href: https://192.168.3.21

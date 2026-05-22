@@ -76,51 +76,6 @@
             url: http://glances.emporer.net
             version: 4
             metric: disk:sda
-    - Speedtest:
-        icon: speedtest-tracker.png
-        href: http://speed.emporer.net
-        server: emporer-docker
-        container: speedtest-tracker
-        description: Network speed tracker
-        widget:
-            type: speedtest
-            url: http://speed.emporer.net
-            bitratePrecision: 0
-            fields: ["download", "upload", "ping"]
-            highlight:
-                download:
-                    numeric:
-                        - level: danger
-                          when: lte
-                          value: 250
-                        - level: warn
-                          when: lte
-                          value: 450
-                        - level: good
-                          when: gte
-                          value: 450
-                upload:
-                    numeric:
-                        - level: danger
-                          when: lte
-                          value: 25
-                        - level: warn
-                          when: lte
-                          value: 45
-                        - level: good
-                          when: gte
-                          value: 45
-                ping:
-                    numeric:
-                        - level: danger
-                          when: gte
-                          value: 50
-                        - level: warn
-                          when: gte
-                          value: 20
-                        - level: good
-                          when: lt
-                          value: 20
 ########################################################################################################################################################################################################
 - Network:
     - Primary PiHole:
@@ -175,6 +130,51 @@
                         - level: danger
                           when: equals
                           value: "0"
+    - Speedtest:
+        icon: speedtest-tracker.png
+        href: http://speed.emporer.net
+        server: emporer-docker
+        container: speedtest-tracker
+        description: Network speed tracker
+        widget:
+            type: speedtest
+            url: http://speed.emporer.net
+            bitratePrecision: 0
+            fields: ["download", "upload", "ping"]
+            highlight:
+                download:
+                    numeric:
+                        - level: danger
+                          when: lte
+                          value: 250
+                        - level: warn
+                          when: lte
+                          value: 450
+                        - level: good
+                          when: gte
+                          value: 450
+                upload:
+                    numeric:
+                        - level: danger
+                          when: lte
+                          value: 25
+                        - level: warn
+                          when: lte
+                          value: 45
+                        - level: good
+                          when: gte
+                          value: 45
+                ping:
+                    numeric:
+                        - level: danger
+                          when: gte
+                          value: 50
+                        - level: warn
+                          when: gte
+                          value: 20
+                        - level: good
+                          when: lt
+                          value: 20
     - Network Uptime:
         icon: uptime-kuma.png
         href: http://kuma.emporer.net

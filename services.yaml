@@ -35,7 +35,7 @@
             type: glances
             url: http://glances.emporer.net
             version: 4
-            metric: network:eth0
+            metric: network:eno1
     - CPU Temp 0:
         
         href: http://glances.emporer.net

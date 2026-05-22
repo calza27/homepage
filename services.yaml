@@ -181,36 +181,65 @@
         container: uptime-kuma
         server: emporer-docker
         description: Monitor the status of your services
-        widget:
-            type: uptimekuma
-            url: http://kuma.emporer.net
-            slug: support-svcs
-            fields: ["up", "down", "uptime"]
-            highlight:
-              up:
-                  numeric:
-                      - level: danger
-                        when: eq
-                        value: 0
-              down:
-                  numeric:
-                      - level: warn
-                        when: gte
-                        value: 1
-                      - level: good
-                        when: eq
-                        value: 0
-              uptime:
-                  numeric:
-                      - level: danger
-                        when: lt
-                        value: 80
-                      - level: warn
-                        when: lt
-                        value: 98
-                      - level: good
-                        when: gte
-                        value: 98
+        widgets:
+            - type: uptimekuma
+              url: http://kuma.emporer.net
+              slug: network
+              fields: ["up", "down", "uptime"]
+              highlight:
+                up:
+                    numeric:
+                        - level: danger
+                          when: eq
+                          value: 0
+                down:
+                    numeric:
+                        - level: warn
+                          when: gte
+                          value: 1
+                        - level: good
+                          when: eq
+                          value: 0
+                uptime:
+                    numeric:
+                        - level: danger
+                          when: lt
+                          value: 80
+                        - level: warn
+                          when: lt
+                          value: 98
+                        - level: good
+                          when: gte
+                          value: 98
+            - type: uptimekuma
+              url: http://kuma.emporer.net
+              slug: emp-support
+              fields: ["up", "down", "uptime"]
+              highlight:
+                up:
+                    numeric:
+                        - level: danger
+                          when: eq
+                          value: 0
+                down:
+                    numeric:
+                        - level: warn
+                          when: gte
+                          value: 1
+                        - level: good
+                          when: eq
+                          value: 0
+                uptime:
+                    numeric:
+                        - level: danger
+                          when: lt
+                          value: 80
+                        - level: warn
+                          when: lt
+                          value: 98
+                        - level: good
+                          when: gte
+                          value: 98
     - nGinx:
         icon: nginx.png
         href: http://nginx.emporer.net
@@ -405,35 +434,93 @@
         server: volo-docker
         description: Monitor the status of your services
         widget:
-            type: uptimekuma
-            url: http://kuma.volo.nas
-            slug: media-stack
-            fields: ["up", "down", "uptime"]
-            highlight:
-              up:
-                  numeric:
-                      - level: danger
-                        when: eq
-                        value: 0
-              down:
-                  numeric:
-                      - level: warn
-                        when: gte
-                        value: 1
-                      - level: good
-                        when: eq
-                        value: 0
-              uptime:
-                  numeric:
-                      - level: danger
-                        when: lt
-                        value: 80
-                      - level: warn
-                        when: lt
-                        value: 98
-                      - level: good
-                        when: gte
-                        value: 98
+            - type: uptimekuma
+              url: http://kuma.emporer.net
+              slug: media-stack
+              fields: ["up", "down", "uptime"]
+              highlight:
+                up:
+                    numeric:
+                        - level: danger
+                          when: eq
+                          value: 0
+                down:
+                    numeric:
+                        - level: warn
+                          when: gte
+                          value: 1
+                        - level: good
+                          when: eq
+                          value: 0
+                uptime:
+                    numeric:
+                        - level: danger
+                          when: lt
+                          value: 80
+                        - level: warn
+                          when: lt
+                          value: 98
+                        - level: good
+                          when: gte
+                          value: 98
+            - type: uptimekuma
+              url: http://kuma.emporer.net
+              slug: support-svcs
+              fields: ["up", "down", "uptime"]
+              highlight:
+                up:
+                    numeric:
+                        - level: danger
+                          when: eq
+                          value: 0
+                down:
+                    numeric:
+                        - level: warn
+                          when: gte
+                          value: 1
+                        - level: good
+                          when: eq
+                          value: 0
+                uptime:
+                    numeric:
+                        - level: danger
+                          when: lt
+                          value: 80
+                        - level: warn
+                          when: lt
+                          value: 98
+                        - level: good
+                          when: gte
+                          value: 98
+            - type: uptimekuma
+              url: http://kuma.emporer.net
+              slug: documents
+              fields: ["up", "down", "uptime"]
+              highlight:
+                up:
+                    numeric:
+                        - level: danger
+                          when: eq
+                          value: 0
+                down:
+                    numeric:
+                        - level: warn
+                          when: gte
+                          value: 1
+                        - level: good
+                          when: eq
+                          value: 0
+                uptime:
+                    numeric:
+                        - level: danger
+                          when: lt
+                          value: 80
+                        - level: warn
+                          when: lt
+                          value: 98
+                        - level: good
+                          when: gte
+                          value: 98
 ########################################################################################################################################################################################################
 - Now Showing:
     - Jellyfin:

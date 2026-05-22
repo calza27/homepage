@@ -3,7 +3,8 @@
 # https://gethomepage.dev/configs/docker/
 
 emporer-docker:
-  socket: /var/run/docker.sock
+  socket: socket.emporer.net
+  port: 80
 
 volo-docker:
   host: socket.volo.nas

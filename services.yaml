@@ -433,7 +433,7 @@
         container: ix-uptime-kuma-uptime-kuma-1
         server: volo-docker
         description: Monitor the status of your services
-        widget:
+        widgets:
             - type: uptimekuma
               url: http://kuma.emporer.net
               slug: media-stack

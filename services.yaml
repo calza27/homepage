@@ -735,7 +735,7 @@
         description: File sharing and collaboration platform
         widget:
             type: nextcloud
-            url: http://nextcloud.volo.nas
+            url: https://192.168.3.103:30027
             username: calza-admin
             password: {{HOMEPAGE_FILE_NEXTCLOUD_KEY}}
-            fields: ["users", "files", "storageUsed"]
+            fields: ["memoryusage", "freespace", "numfiles", "numshares"]

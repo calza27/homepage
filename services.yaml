@@ -727,3 +727,15 @@
                         - level: good
                           when: gte
                           value: 98
+    - Nextcloud:
+        icon: nextcloud.png
+        href: http://nextcloud.volo.nas
+        container: ix-nextcloud-nextcloud-1
+        server: volo-docker
+        description: File sharing and collaboration platform
+        widget:
+            type: nextcloud
+            url: http://nextcloud.volo.nas
+            username: calza-admin
+            password: {{HOMEPAGE_FILE_NEXTCLOUD_KEY}}
+            fields: ["users", "files", "storageUsed"]

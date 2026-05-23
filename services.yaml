@@ -443,7 +443,7 @@
     - Gluetun:
         icon: gluetun.png
         href: http://gluetun.volo.nas
-        container: ix-gluetun-gluetun-1
+        container: gluetun
         server: volo-docker
         description: VPN client for the whole system
         widget:

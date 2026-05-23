@@ -449,7 +449,7 @@
         widget:
             type: gluetun
             url: http://gluetun.volo.nas
-            fields: ["public_ip", "region", "country", "port_forwarded"]
+            fields: ["public_ip", "country", "port_forwarded"]
     - Media Support Uptime:
         icon: uptime-kuma.png
         href: http://kuma.volo.nas

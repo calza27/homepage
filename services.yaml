@@ -440,6 +440,16 @@
             url: http://nginx.volo.nas
             username: calza27@gmail.com
             password: {{HOMEPAGE_FILE_NGINX_VOLO_KEY}}
+    - Gluetun:
+        icon: gluetun.png
+        href: http://gluetun.volo.nas
+        container: ix-gluetun-gluetun-1
+        server: volo-docker
+        description: VPN client for the whole system
+        widget:
+            type: gluetun
+            url: http://gluetun.volo.nas
+            fields: ["region", "country", "port_forwarded"]
     - Media Support Uptime:
         icon: uptime-kuma.png
         href: http://kuma.volo.nas

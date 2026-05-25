@@ -86,7 +86,7 @@
 - Network:
     - Primary PiHole:
         icon: pi-hole.png
-        href: http://pihole.emporer.net
+        href: http://pihole.emporer.net/admin
         container: pihole
         server: emporer-docker
         description: Primary network-wide ad blocker (emporer.net)

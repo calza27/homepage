@@ -155,10 +155,10 @@
                           value: 250
                         - level: warn
                           when: lte
-                          value: 450
+                          value: 420
                         - level: good
                           when: gte
-                          value: 450
+                          value: 420
                 upload:
                     numeric:
                         - level: danger
@@ -166,10 +166,10 @@
                           value: 25
                         - level: warn
                           when: lte
-                          value: 45
+                          value: 35
                         - level: good
                           when: gte
-                          value: 45
+                          value: 35
                 ping:
                     numeric:
                         - level: danger

@@ -8,7 +8,7 @@
     network: true
 
 - unifi_console:
-    url: https://192.168.3.21
+    url: https://192.168.100.26
     key: {{HOMEPAGE_FILE_UNIFI_KEY}}
 
 - search:

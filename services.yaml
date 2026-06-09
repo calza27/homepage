@@ -266,11 +266,11 @@
                           value: 98
     - unifi:
         icon: unifi.png
-        href: https://192.168.3.21
+        href: https://192.168.100.26
         description: Network management controller
         widget:
             type: unifi
-            url: https://192.168.3.21
+            url: https://192.168.100.26
             key: {{HOMEPAGE_FILE_UNIFI_KEY}}
             highlight:
                 wlan:

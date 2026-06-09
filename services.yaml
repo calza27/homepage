@@ -426,7 +426,9 @@
             type: truenas
             url: http://volo.nas
             version: 2
-            key: {{HOMEPAGE_FILE_TRUENAS_KEY}}
+            # key: {{HOMEPAGE_FILE_TRUENAS_KEY}}
+            username: Homepage
+            password: ''
             enablePools: true 
             nasType: core
     - Volo nGinx:

@@ -424,12 +424,11 @@
         description: The OS
         widget:
             type: truenas
-            url: http://volo.nas
+            url: http://192.168.10.4:30080
             version: 2
             key: {{HOMEPAGE_FILE_TRUENAS_KEY}}
             enablePools: true 
             nasType: scale
-            allowInsecure: true
     - Volo nGinx:
         icon: nginx.png
         href: http://nginx.volo.nas

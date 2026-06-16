@@ -418,17 +418,17 @@
                 version: 4
                 metric: disk:sdd
 - System Apps:
-    - TrueNAS:
-        icon: truenas.png
-        href: http://volo.nas
-        description: The OS
-        widget:
-            type: truenas
-            url: http://192.168.10.4:30080
-            version: 2
-            key: {{HOMEPAGE_FILE_TRUENAS_KEY}}
-            enablePools: true 
-            nasType: scale
+    # - TrueNAS:
+    #     icon: truenas.png
+    #     href: http://volo.nas
+    #     description: The OS
+    #     widget:
+    #         type: truenas
+    #         url: http://192.168.10.4:30080
+    #         version: 2
+    #         key: {{HOMEPAGE_FILE_TRUENAS_KEY}}
+    #         enablePools: true 
+    #         nasType: scale
     - Volo nGinx:
         icon: nginx.png
         href: http://nginx.volo.nas

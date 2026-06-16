@@ -429,6 +429,7 @@
             key: {{HOMEPAGE_FILE_TRUENAS_KEY}}
             enablePools: true 
             nasType: scale
+            allowInsecure: true
     - Volo nGinx:
         icon: nginx.png
         href: http://nginx.volo.nas

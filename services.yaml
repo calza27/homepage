@@ -666,55 +666,6 @@
             url: http://radarr.volo.nas
             key: {{HOMEPAGE_FILE_RADARR_KEY}}
             fields: ["wanted", "queued", "movies"]
-    - Bookshelf:
-        icon: readarr.png
-        href: http://bookshelf.volo.nas
-        container: ix-bookshelf-bookshelf-1
-        server: volo-docker
-        description: Automate downloading books
-        widget:
-            type: readarr
-            url: http://bookshelf.volo.nas
-            key: {{HOMEPAGE_FILE_BOOKSHELF_KEY}}
-            fields: ["wanted", "queued", "books"]
-    - Shelfmark:
-        icon: /icons/shelfmark.png
-        href: http://shelfmark.volo.nas
-        container: ix-shelfmark-shelfmark-1
-        server: volo-docker
-        description: Automate downloading books
-        widget:
-            type: customapi
-            url: http://shelfmark.volo.nas/api/admin/requests/count
-            refreshInterval: 10000
-            method: GET
-            headers:
-              X-Auth-User: calza
-            mappings:
-              - field: by_status.pending
-                label: Pending Requests
-                format: number
-                remap:
-                  - value: null
-                    to: 0
-              - field: by_status.cancelled
-                label: Cancelled Requests
-                format: number
-                remap:
-                  - value: null
-                    to: 0
-              - field: by_status.fulfilled
-                label: Fulfilled Requests
-                format: number
-                remap:
-                  - value: null
-                    to: 0
-              - field: by_status.rejected
-                label: Rejected Requests
-                format: number
-                remap:
-                  - value: null
-                    to: 0
     - Bazarr:
         icon: bazarr.png
         href: http://bazarr.volo.nas

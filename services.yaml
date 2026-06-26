@@ -689,7 +689,7 @@
             refreshInterval: 10000
             method: GET
             headers:
-              X-Api-Key: {{HOMEPAGE_FILE_SHELFMARK_KEY}}
+              X-Auth-User: calza
             mappings:
               - field: by_status.pending
                 label: Pending Requests

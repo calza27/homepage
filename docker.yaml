@@ -3,9 +3,9 @@
 # https://gethomepage.dev/configs/docker/
 
 emporer-docker:
-  host: 192.168.10.4:2375
-  port: 80
+  host: 192.168.10.4
+  port: 2375
 
 volo-docker:
-  host: 192.168.10.5:2375
-  port: 80
+  host: 192.168.10.5
+  port: 2375

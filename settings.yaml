@@ -86,3 +86,8 @@ layout:
     style: row
     icon: mdi-server-#FFFFFF
     columns: 4
+  Images Stack:
+    tab: Volo.nas Apps
+    style: row
+    icon: mdi-image-album-#FFFFFF
+    columns: 4

@@ -452,9 +452,9 @@
             fields: ["public_ip", "country", "port_forwarded"]
     - Media Support Uptime:
         icon: uptime-kuma.png
-        href: http://kuma.volo.nas
-        container: ix-uptime-kuma-uptime-kuma-1
-        server: volo-docker
+        href: http://kuma.emporer.nas
+        container: uptime-kuma
+        server: emporer-docker
         description: Monitor the status of your services
         widgets:
             - type: uptimekuma
@@ -531,9 +531,9 @@
 - Media Stack:
     - Media Stack Uptime:
         icon: uptime-kuma.png
-        href: http://kuma.volo.nas
-        container: ix-uptime-kuma-uptime-kuma-1
-        server: volo-docker
+        href: http://kuma.emporer.nas
+        container: uptime-kuma
+        server: emporer-docker
         description: Monitor the status of your services
         widgets:
             - type: uptimekuma
@@ -692,9 +692,9 @@
 - Documents Stack:
     - Documents Stack Uptime:
         icon: uptime-kuma.png
-        href: http://kuma.volo.nas
-        container: ix-uptime-kuma-uptime-kuma-1
-        server: volo-docker
+        href: http://kuma.emporer.nas
+        container: uptime-kuma
+        server: emporer-docker
         description: Monitor the status of your services
         widgets:
             - type: uptimekuma
@@ -738,3 +738,52 @@
             username: calza-admin
             password: {{HOMEPAGE_FILE_NEXTCLOUD_KEY}}
             fields: ["memoryusage", "freespace", "numfiles", "numshares"]
+########################################################################################################################################################################################################
+- Images Stack:
+    - Images Stack Uptime:
+        icon: uptime-kuma.png
+        href: http://kuma.emporer.nas
+        container: uptime-kuma
+        server: emporer-docker
+        description: Monitor the status of your services
+        widgets:
+            - type: uptimekuma
+              url: http://kuma.emporer.net
+              slug: images
+              fields: ["up", "down", "uptime"]
+              highlight:
+                up:
+                    numeric:
+                        - level: danger
+                          when: eq
+                          value: 0
+                down:
+                    numeric:
+                        - level: warn
+                          when: gte
+                          value: 1
+                        - level: good
+                          when: eq
+                          value: 0
+                uptime:
+                    numeric:
+                        - level: danger
+                          when: lt
+                          value: 80
+                        - level: warn
+                          when: lt
+                          value: 98
+                        - level: good
+                          when: gte
+                          value: 98
+    - Immich:
+        icon: immich.png
+        href: http://immich.volo.nas
+        container: ix-immich-server-1
+        server: volo-docker
+        description: Images backup and gallery
+        widget:
+            type: immich
+            url: http://immich.volo.nas
+            key: {{HOMEPAGE_FILE_IMMICH_KEY}}
+            fields: ["users" ,"photos", "videos", "storage"]

@@ -689,6 +689,55 @@
             key: {{HOMEPAGE_FILE_PROWLARR_KEY}}
             fields: ["numberOfGrabs", "numberOfQueries", "numberOfFailGrabs", "numberOfFailQueries"]
 ########################################################################################################################################################################################################
+- Books Stack:
+    - Books Stack Uptime:
+        icon: uptime-kuma.png
+        href: http://kuma.emporer.nas
+        container: uptime-kuma
+        server: emporer-docker
+        description: Monitor the status of your services
+        widgets:
+            - type: uptimekuma
+              url: http://kuma.emporer.net
+              slug: books
+              fields: ["up", "down", "uptime"]
+              highlight:
+                up:
+                    numeric:
+                        - level: danger
+                          when: eq
+                          value: 0
+                down:
+                    numeric:
+                        - level: warn
+                          when: gte
+                          value: 1
+                        - level: good
+                          when: eq
+                          value: 0
+                uptime:
+                    numeric:
+                        - level: danger
+                          when: lt
+                          value: 80
+                        - level: warn
+                          when: lt
+                          value: 98
+                        - level: good
+                          when: gte
+                          value: 98
+    - Audiobookshelf:
+        icon: audiobookshelf.png
+        href: http://bookshelf.volo.nas
+        container: ix-audiobookshelf-audiobookshelf-1
+        server: volo-docker
+        description: Read eBooks and listen to Audiobooks
+        widget:
+            type: audiobookshelf
+            url: http://bookshelf.volo.nas
+            key: {{HOMEPAGE_FILE_AUDIOBOOKSHELF_KEY}}
+            fields: ["books", "booksDuration", "podcasts", "podcastsDuration"]
+########################################################################################################################################################################################################
 - Documents Stack:
     - Documents Stack Uptime:
         icon: uptime-kuma.png

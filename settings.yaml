@@ -79,6 +79,11 @@ layout:
   Media Stack:
     tab: Volo.nas Apps
     style: row
+    icon: mdi-bookshelf-#FFFFFF
+    columns: 4
+  Books Stack:
+    tab: Volo.nas Apps
+    style: row
     icon: mdi-server-#FFFFFF
     columns: 4
   Documents Stack:

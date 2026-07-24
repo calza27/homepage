@@ -737,6 +737,38 @@
             url: http://bookshelf.volo.nas
             key: {{HOMEPAGE_FILE_AUDIOBOOKSHELF_KEY}}
             fields: ["books", "booksDuration", "podcasts", "podcastsDuration"]
+    - Librarr:
+        icon: audiobookshelf.png
+        href: http://librarr.volo.nas
+        container: librarr-librarr-1
+        server: volo-docker
+        description: Search for and index eBooks and audiobooks
+        widget:
+            - type: customapi
+              url: http://librarr.volo.nas/api/stats
+              refreshInterval: 10000
+              method: GET
+              headers:
+                X-Api-Key: {{HOMEPAGE_FILE_LIBRARR_KEY}}
+              mappings:
+                - field: ebooks 
+                  label: eBooks Added
+                  format: number
+                  remap:
+                    - value: null
+                      to: 0
+                - field: audiobooks
+                  label: Audiobooks Added
+                  format: number
+                  remap:
+                    - value: null
+                      to: 0
+                - field: manga
+                  label: Manga Added
+                  format: number
+                  remap:
+                    - value: null
+                      to: 0
 ########################################################################################################################################################################################################
 - Documents Stack:
     - Documents Stack Uptime:

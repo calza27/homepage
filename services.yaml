@@ -787,3 +787,4 @@
             url: http://immich.volo.nas
             key: {{HOMEPAGE_FILE_IMMICH_KEY}}
             fields: ["users" ,"photos", "videos", "storage"]
+            version: 2

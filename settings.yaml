@@ -65,6 +65,10 @@ layout:
       icon: mdi-file-document-#FFFFFF
       style: row
       columns: 4
+    Disk Activity > Images:
+      icon: mdi-image-album-#FFFFFF
+      style: row
+      columns: 4
   System Apps:
     icon: mdi-application-#FFFFFF
     style: row

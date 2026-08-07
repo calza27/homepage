@@ -416,7 +416,7 @@
                 type: glances
                 url: http://glances.volo.nas
                 version: 4
-                metric: disk:sda
+                metric: disk:sdb
     - Disk Activity > Images:
         - Disk 1:
             href: http://glances.volo.nas
@@ -424,7 +424,7 @@
                 type: glances
                 url: http://glances.volo.nas
                 version: 4
-                metric: disk:sdb
+                metric: disk:sda
         - Disk 2:
             href: http://glances.volo.nas
             widget:

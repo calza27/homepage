@@ -136,6 +136,42 @@
                         - level: danger
                           when: equals
                           value: "0"
+    - Support Uptime:
+        icon: uptime-kuma.png
+        href: http://kuma.emporer.net
+        container: uptime-kuma
+        server: emporer-docker
+        description: Monitor the status of your services
+        widgets:
+            - type: uptimekuma
+              url: http://kuma.emporer.net
+              slug: emp-support
+              fields: ["up", "down", "uptime"]
+              highlight:
+                up:
+                    numeric:
+                        - level: danger
+                          when: eq
+                          value: 0
+                down:
+                    numeric:
+                        - level: warn
+                          when: gte
+                          value: 1
+                        - level: good
+                          when: eq
+                          value: 0
+                uptime:
+                    numeric:
+                        - level: danger
+                          when: lt
+                          value: 80
+                        - level: warn
+                          when: lt
+                          value: 98
+                        - level: good
+                          when: gte
+                          value: 98
     - Speedtest:
         icon: speedtest-tracker.png
         href: http://speed.emporer.net
@@ -228,42 +264,6 @@
                         - level: good
                           when: gte
                           value: 98
-    - Support Uptime:
-        icon: uptime-kuma.png
-        href: http://kuma.emporer.net
-        container: uptime-kuma
-        server: emporer-docker
-        description: Monitor the status of your services
-        widgets:
-            - type: uptimekuma
-              url: http://kuma.emporer.net
-              slug: emp-support
-              fields: ["up", "down", "uptime"]
-              highlight:
-                up:
-                    numeric:
-                        - level: danger
-                          when: eq
-                          value: 0
-                down:
-                    numeric:
-                        - level: warn
-                          when: gte
-                          value: 1
-                        - level: good
-                          when: eq
-                          value: 0
-                uptime:
-                    numeric:
-                        - level: danger
-                          when: lt
-                          value: 80
-                        - level: warn
-                          when: lt
-                          value: 98
-                        - level: good
-                          when: gte
-                          value: 98
     - unifi:
         icon: unifi.png
         href: https://192.168.100.5
@@ -298,6 +298,44 @@
                         - level: good
                           when: gt
                           value: 0
+########################################################################################################################################################################################################
+- Home Automation:
+  - Home Automation Uptime:
+        icon: uptime-kuma.png
+        href: http://kuma.emporer.net
+        container: uptime-kuma
+        server: emporer-docker
+        description: Monitor the status of your services
+        widgets:
+            - type: uptimekuma
+              url: http://kuma.emporer.net
+              slug: home-automation
+              fields: ["up", "down", "uptime"]
+              highlight:
+                up:
+                    numeric:
+                        - level: danger
+                          when: eq
+                          value: 0
+                down:
+                    numeric:
+                        - level: warn
+                          when: gte
+                          value: 1
+                        - level: good
+                          when: eq
+                          value: 0
+                uptime:
+                    numeric:
+                        - level: danger
+                          when: lt
+                          value: 80
+                        - level: warn
+                          when: lt
+                          value: 98
+                        - level: good
+                          when: gte
+                          value: 98
 ########################################################################################################################################################################################################
 - System:
     - System Info:

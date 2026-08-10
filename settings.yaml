@@ -37,6 +37,11 @@ layout:
     icon: mdi-network-#FFFFFF
     style: row
     columns: 2
+  Home Automation:
+    tab: Emporer.net
+    icon: mdi-home-automation-#FFFFFF
+    style: row
+    columns: 2
   # Volo.nas System Items
   System:
     style: row
